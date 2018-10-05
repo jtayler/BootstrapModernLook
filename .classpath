@@ -22,5 +22,11 @@
 	<classpathentry kind="con" path="WOFramework/JavaEOInterface"/>
 	<classpathentry kind="con" path="WOFramework/ERModernDefaultSkin"/>
 	<classpathentry kind="con" path="WOFramework/ERRest"/>
+	<classpathentry kind="con" path="WOFramework/JavaEOInterfaceCocoa"/>
+	<classpathentry kind="con" path="WOFramework/JavaDTWGeneration"/>
+	<classpathentry kind="con" path="WOFramework/ERAttachment"/>
+	<classpathentry kind="con" path="WOFramework/JavaEOGeneration"/>
+	<classpathentry kind="con" path="WOFramework/Ajax"/>
+	<classpathentry kind="con" path="WOFramework/ERCoreBusinessLogic"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
