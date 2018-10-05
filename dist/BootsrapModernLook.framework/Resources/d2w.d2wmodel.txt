@@ -1,5 +1,0 @@
-(
-    100 : *true* => baseClassForFormInput = form-control [com.webobjects.directtoweb.Assignment],
-    100 : *true* => baseClassForErrorBlock = alert alert-danger [com.webobjects.directtoweb.Assignment],
-    100 : *true* => baseClassForObjectTable = table table-borderless table-md [com.webobjects.directtoweb.Assignment]
-)
