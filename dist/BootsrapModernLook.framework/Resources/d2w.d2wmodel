@@ -1,7 +1,7 @@
 {
   "rules" = (
     {
-      "author" = "100"; 
+      "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
@@ -10,7 +10,7 @@
       }; 
     }, 
     {
-      "author" = "100"; 
+      "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
@@ -19,12 +19,55 @@
       }; 
     }, 
     {
-      "author" = "100"; 
+      "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForObjectTable"; 
         "value" = "table table-borderless table-md"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "list"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "select"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+            "qualifiers" = (
+              {
+                "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+                "key" = "task"; 
+                "selectorName" = "isEqualTo"; 
+                "value" = "edit"; 
+              }, 
+              {
+                "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+                "key" = "subTask"; 
+                "selectorName" = "isEqualTo"; 
+                "value" = "list"; 
+              }
+            ); 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "repetitionComponentName"; 
+        "value" = "BootsrapModernRepetition"; 
       }; 
     }
   ); 

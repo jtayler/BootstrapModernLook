@@ -28,7 +28,7 @@
       }; 
     }, 
     {
-      "author" = "10"; 
+      "author" = "110"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
         "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
