@@ -1,9 +1,9 @@
 (
+    10 : *true* => baseClassForObjectTable = table [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForFormInput = form-control [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForFormInput = form-control [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForErrorBlock = alert alert-danger [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForErrorBlock = alert alert-danger [com.webobjects.directtoweb.Assignment],
-    10 : *true* => baseClassForObjectTable = table table-borderless table-md [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForObjectTable = table table-borderless table-md [com.webobjects.directtoweb.Assignment],
     40 : (task = 'list' or task = 'select' or (task = 'edit' and subTask = 'list')) => repetitionComponentName = BootsrapModernRepetition [com.webobjects.directtoweb.Assignment]
 )
