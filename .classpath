@@ -28,5 +28,6 @@
 	<classpathentry kind="con" path="WOFramework/JavaEOGeneration"/>
 	<classpathentry kind="con" path="WOFramework/Ajax"/>
 	<classpathentry kind="con" path="WOFramework/ERCoreBusinessLogic"/>
+	<classpathentry kind="con" path="WOFramework/ERCoolComponents"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
