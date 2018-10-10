@@ -5,7 +5,7 @@
         <webobject name="ShouldShowDefaultPageButtons">
           <ul class = "ActionList">
             <webobject name = "IsEditingConditional">
-              <li><webobject name = "CancelButton" /></li>
+              <li><webobject name = "CancelButtonSpan" /><webobject name = "CancelButton" /></li>
               <li><webobject name = "SubmitChanges" /></li>
             </webobject>
             <webobject name = "IsNotEditingConditional">
@@ -30,7 +30,11 @@
         <webobject name="ShouldShowDefaultPageButtons">
           <ul class = "ActionList">
             <webobject name = "IsEditingConditional">
-                <li><webobject name = "CancelButton" /></li>
+                <li>
+                <webobject name = "CancelButton">
+                <webobject name = "CancelButtonSpan" />                
+                </webobject>
+                </li>
                 <li><webobject name = "SubmitChanges" /></li>
             </webobject>
             <webobject name = "IsNotEditingConditional">

@@ -1,9 +1,14 @@
+CancelButtonSpan : WOGenericContainer {
+	elementName = "span";
+	class = d2wContext.baseClassForCancelButtonSpan;
+}
+
 CancelButton: CCSmartAjaxButton {
 	alt = "Reverts your changes";
-	value = d2wContext.cancelButtonLabel;
 	action = cancelAction;
+	value = d2wContext.cancelButtonLabel;
 	dontSubmitForm = true;
-	class = "btn btn-light btn-pill";
+	class = d2wContext.baseClassForCancelButton;
 	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
 	updateContainerID = d2wContext.idForParentMainContainer;
 }
@@ -17,7 +22,7 @@ EditButton: CCSmartAjaxButton {
 	action = editAction;
 	alt = "Edits this object";
 	value = d2wContext.editButtonLabel;
-	class = "btn btn-success btn-pill";
+	class = d2wContext.baseClassForSaveButton;
 	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
     updateContainerID = d2wContext.idForParentMainContainer;
 }
@@ -57,7 +62,7 @@ ReturnButton: CCSmartAjaxButton {
 	alt = "Returns to the previous page";
 	action = nextPage;
 	value = d2wContext.returnButtonLabel;
-	class = "btn btn-light btn-pill";
+	class = d2wContext.baseClassForCancelButton;
 	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
     updateContainerID = d2wContext.idForParentMainContainer;
 }
@@ -70,7 +75,7 @@ SubmitChanges: CCSmartAjaxButton {
 	action = submitAction;
 	alt = "Saves your changes";
 	value = d2wContext.saveButtonLabel;
-	class = "btn btn-success btn-pill";
+	class = d2wContext.baseClassForSaveButton;
 	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
     updateContainerID = d2wContext.idForParentMainContainer;
 }
