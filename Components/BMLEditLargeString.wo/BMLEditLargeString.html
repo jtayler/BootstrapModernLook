@@ -1,4 +1,19 @@
-EditString!
-
-<div id="chars"><wo:str value="144" /></div>
+<div class="bmlcharcount"><wo:str value="$d2wContext.id" /></div>
 <WEBOBJECT NAME=EditString></WEBOBJECT>
+   <script>
+      var maxLength = 144;
+      var countDiv = $('.bmlcharcount');
+      var textArea = $("#PCUC_EditUser_Bio");
+	  var length = textArea.val().length;
+      var length = maxLength-length;
+      countDiv.html(length);
+
+		alert(textArea);
+
+      textArea.keyup(function() {
+	    var length = textArea.val().length;
+        var length = maxLength-length;
+        countDiv.html(length);
+	  });
+      
+   </script>
