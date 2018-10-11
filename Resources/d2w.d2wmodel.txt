@@ -11,6 +11,7 @@
     10 : (propertyKey = 'website' or propertyKey = 'url') => baseClassForInputSpan = fa fa-link [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForObjectTablePagination = pagination pagination-lg justify-content-center [com.webobjects.directtoweb.Assignment],
     10 : (propertyKey = 'link' or propertyKey like '*URL' or propertyKey like '*ebsite') => inputTypeForObject = url [com.webobjects.directtoweb.Assignment],
+    20 : *true* => cardSectionsContents = {"card-img-top" = "description"; "card-link" = "description"; "card-text" = "description"; "card-title" = "description"; } [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => templateNameForInspectPage = BootsrapInspectPage [com.webobjects.directtoweb.Assignment],
     40 : (propertyKey = 'password' and task = 'edit') => componentName = BMLEditPassword [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => batchNavigationBarComponentName = BMLBatchNavigationBar [com.webobjects.directtoweb.Assignment],

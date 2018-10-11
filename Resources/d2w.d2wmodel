@@ -155,6 +155,20 @@
       }; 
     }, 
     {
+      "author" = "20"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "cardSectionsContents"; 
+        "value" = {
+          "card-img-top" = "description"; 
+          "card-link" = "description"; 
+          "card-text" = "description"; 
+          "card-title" = "description"; 
+        }; 
+      }; 
+    }, 
+    {
       "author" = "40"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {

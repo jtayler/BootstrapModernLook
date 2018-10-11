@@ -1,0 +1,15 @@
+HasHeaderConditional : ERXNonNullConditional {
+	condition = cardHeader;
+}
+HasTitleConditional : ERXNonNullConditional {
+	condition = cardTitle;
+}
+HasImageConditional : ERXNonNullConditional {
+	condition = cardImageSrc;
+}
+HasTextConditional : ERXNonNullConditional {
+	condition = cardText;
+}
+HasLinkConditional : ERXNonNullConditional {
+	condition = cardLink;
+}
