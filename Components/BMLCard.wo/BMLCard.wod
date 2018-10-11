@@ -1,8 +1,11 @@
-CardLink: WOHyperlink {
+CardLinkTitled: WOHyperlink {
 	escapeHTML=false;
 	string = cardLinkTitle;
-	href = cardLink;
+	href = linkURL;
 	class = d2wContext.baseClassForInspectButton;
+}
+CardLink: WOHyperlink {
+	href = linkURL;
 }
 HasHeaderConditional : ERXNonNullConditional {
 	condition = cardHeader;

@@ -1,9 +1,17 @@
 package wo.bml.components;
 
+import com.webobjects.appserver.WOActionResults;
 import com.webobjects.appserver.WOContext;
+import com.webobjects.directtoweb.D2W;
 import com.webobjects.directtoweb.D2WContext;
 import com.webobjects.directtoweb.D2WCustomComponent;
+import com.webobjects.directtoweb.InspectPageInterface;
 import com.webobjects.foundation.NSDictionary;
+
+import er.extensions.appserver.ERXRequest;
+import er.extensions.components.ERXComponentUtilities;
+import er.extensions.eof.ERXGenericRecord;
+import wo.bml.classes.BMLRouteUrlUtils;
 
 public class BMLCard extends D2WCustomComponent {
     /**
@@ -19,6 +27,25 @@ public class BMLCard extends D2WCustomComponent {
 		return valueForD2WKey("card-header");
 	}
 
+	public String linkURL() {
+		String linkUrl ="";
+		String action = (String)valueForBinding("action");
+
+		boolean secure = ERXComponentUtilities.booleanValueForBinding(this, "secure", ERXRequest.isRequestSecure(context().request()));
+		boolean includeSessionID = context().hasSession() && context().session().storesIDsInURLs();
+		linkUrl = BMLRouteUrlUtils.actionUrlForRecord(context(), (ERXGenericRecord) object(), action, null, null, secure, includeSessionID);
+
+		return linkUrl;
+	}
+
+
+	public WOActionResults inspectAction() {
+		InspectPageInterface ipi = D2W.factory().inspectPageForEntityNamed(object().entityName(), session());
+		ipi.setObject(object());
+		ipi.setNextPage(context().page());
+		return (WOActionResults)ipi;
+	}
+	
 	public String cardImageSrc() {
 		return valueForD2WKey("card-img-top");
 	}

@@ -1,4 +1,4 @@
-package your.app;
+package wo.bml.classes;
 
 import er.extensions.ERXFrameworkPrincipal;
 
