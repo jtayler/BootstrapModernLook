@@ -1,0 +1,59 @@
+<webobject name = "HasMultiplePagesConditional">
+   <nav aria-label="Pagination navigation">
+      <webobject name = "ClassContainer">
+         <webobject name = "HasPreviousPageConditional">
+            <span class="page-item">
+               <webobject name = "PreviousPageAction">
+                  <webobject name="PreviousLabel"/>
+               </webobject>
+            </span>
+         </webobject>
+         <webobject name = "HasNoPreviousPageConditional">
+            <span class="page-item disabled">
+            <span class="page-link">
+               <webobject name="PreviousLabel"/>
+            </span>
+            </span>
+         </webobject>
+         <webobject name = "PageNumberRepetition">
+            <webobject name = "IsCurrentPageNumberConditional">
+               <span class="page-item active">
+            		<span class="page-link">
+               			<webobject name="PageNumber"/>
+            		</span>
+               </span>
+            </webobject>
+            <webobject name = "IsNotCurrentPageNumberConditional">
+               <webobject name = "IsPageNumberConditional">
+                  <span class="page-item">
+                     <webobject name = "SelectPageAction">
+                        <webobject name = "PageNumber"/>
+                     </webobject>
+                  </span>
+               </webobject>
+               <webobject name = "IsEllipsisConditional">
+               <span class="page-item disabled">
+               <span class="page-link">
+               ...
+               </span>
+               </span>
+               </webobject>
+            </webobject>
+         </webobject>
+         <webobject name = "HasNextPageConditional">
+            <span class="page-item">
+               <webobject name = "NextPageAction">
+                  <webobject name="NextLabel"/>
+               </webobject>
+            </span>
+         </webobject>
+         <webobject name = "HasNoNextPageConditional">
+            <span class="page-item disabled">
+            <span class="page-link">
+               <webobject name="NextLabel"/>
+            </span>
+            </span>
+         </webobject>
+      </webobject>
+   </nav>
+</webobject>

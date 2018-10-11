@@ -90,6 +90,15 @@
     {
       "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForObjectTablePagination"; 
+        "value" = "pagination justify-content-center"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
         "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
         "qualifiers" = (
@@ -184,6 +193,21 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "componentName"; 
         "value" = "BMLEditPassword"; 
+      }; 
+    }, 
+    {
+      "author" = "40"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "look"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "ERModernLook"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "batchNavigationBarComponentName"; 
+        "value" = "BMLBatchNavigationBar"; 
       }; 
     }, 
     {
