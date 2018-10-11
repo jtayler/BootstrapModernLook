@@ -1,6 +1,6 @@
 ClassContainer : WOGenericContainer {
 	elementName = "DIV";
-	class = context.page.d2wContext.baseClassForObjectTablePagination;
+	class = ^d2wContext.baseClassForObjectTablePagination;
 }
 PageNumberRepetition : WORepetition {
 	list = pageNumbers;
