@@ -31,14 +31,23 @@ public class BMLCard extends D2WCustomComponent {
 		return valueForD2WKey("card-link");
 	}
 	
+	public String cardLinkTitle() {
+		return keyForD2WKey("card-link-title");
+	}
+	
 	public String cardText() {
 		return valueForD2WKey("card-text");
 	}
 
-	public String valueForD2WKey(String d2wKey) {
+	public String keyForD2WKey(String d2wKey) {
 		D2WContext ctx = d2wContext();
 		NSDictionary<String, String> cardSectionsContents=(NSDictionary<String, String>) ctx.valueForKey("cardSectionsContents");
 		String key = (String) cardSectionsContents.valueForKey(d2wKey);
+	    return key;
+	}
+
+	public String valueForD2WKey(String d2wKey) {
+		String key = (String) keyForD2WKey(d2wKey);
 	    return (String) object().valueForKeyPath(key);
 	}
 }
