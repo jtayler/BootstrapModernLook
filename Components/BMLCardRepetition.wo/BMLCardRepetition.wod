@@ -1,0 +1,26 @@
+ContainerClass: WOGenericContainer {
+	_unroll = true;
+	elementName = "DIV";
+	class = d2wContext.objectCardContainerClass;
+}
+DivClass: WOGenericContainer {
+	_unroll = true;
+	elementName = "DIV";
+	class = d2wContext.objectCardColumnClass;
+}
+Card: WOSwitchComponent { 
+	WOComponentName = d2wContext.cardComponentName;
+	_componentUnroll = true;
+	_unroll = true;
+	localContext = d2wContext;
+	object = d2wContext.object;
+}
+
+
+ObjectsRepetition: WORepetition {
+	item = d2wContext.object;
+	list = ^displayGroup.displayedObjects;
+	index = rowIndex;
+}
+
+
