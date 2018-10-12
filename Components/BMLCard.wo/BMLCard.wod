@@ -1,11 +1,13 @@
 CardLinkTitled: WOHyperlink {
 	escapeHTML=false;
 	string = cardLinkTitle;
-	href = linkURL;
+	//href = linkURL;
+	href = cardLink;
 	class = d2wContext.baseClassForInspectButton;
 }
 CardLink: WOHyperlink {
-	href = linkURL;
+	//href = linkURL;
+	href = cardLink;
 }
 HasHeaderConditional : ERXNonNullConditional {
 	condition = cardHeader;
@@ -13,8 +15,11 @@ HasHeaderConditional : ERXNonNullConditional {
 HasTitleConditional : ERXNonNullConditional {
 	condition = cardTitle;
 }
-HasImageConditional : ERXNonNullConditional {
+HasCardImageTop : ERXNonNullConditional {
 	condition = cardImageSrc;
+}
+HasCardFooter : ERXNonNullConditional {
+	condition = cardFooterText;
 }
 HasTextConditional : ERXNonNullConditional {
 	condition = cardText;

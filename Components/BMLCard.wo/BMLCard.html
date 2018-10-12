@@ -1,23 +1,32 @@
 <div class="card">
-
-  <webobject name ="HasHeaderConditional">
-  <img class="card-img-top" src=<wo:str value="$cardHeader" /> >
-  </webobject>
-  <webobject name ="HasImageConditional">
-  <webobject name ="CardLink">
-  <img class="card-img-top" src=<wo:str value="$cardImageSrc" /> >
-  </webobject>
-  </webobject>
-  <div class="card-body">
-  <webobject name ="HasTitleConditional">
-    <h4 class="card-title"><wo:str value="$cardTitle" /></h4>
-  </webobject>
-  <webobject name ="HasTextConditional">
-    <p class="card-text"><wo:str value="$cardText" /></p>
-  </webobject>
-  <webobject name ="HasLinkConditional">
-    <webobject name ="CardLinkTitled"></webobject>
-  </webobject>
-  </div>
-
+   <webobject name ="HasHeaderConditional">
+      <div class="card-header">
+         <wo:str value="$cardHeader" />
+      </div>
+   </webobject>
+   <webobject name ="HasCardImageTop">
+      <webobject name ="CardLink">
+         <img class="card-img-top" src=<wo:str value="$cardImageSrc" /> >
+      </webobject>
+   </webobject>
+   <div class="card-body">
+      <webobject name ="HasTitleConditional">
+         <h4 class="card-title">
+            <wo:str value="$cardTitle" />
+         </h4>
+      </webobject>
+      <webobject name ="HasTextConditional">
+         <p class="card-text">
+            <wo:str value="$cardText" />
+         </p>
+      </webobject>
+      <webobject name ="HasLinkConditional">
+         <webobject name ="CardLinkTitled"></webobject>
+      </webobject>
+   </div>
+      <webobject name ="HasCardFooter">
+    <div class="card-footer">
+      <small class="text-muted"><wo:str value="$cardFooterText" /></small>
+    </div>
+      </webobject>
 </div>

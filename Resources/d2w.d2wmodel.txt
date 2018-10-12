@@ -11,6 +11,7 @@
     10 : *true* => baseClassForCancelButton = btn btn-light btn-pill [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForCancelButtonSpan = fa fa-sign-in mr-2 [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForSaveButton = btn btn-primary btn-pill [com.webobjects.directtoweb.Assignment],
+    10 : propertyKey = 'password' => baseClassForInputSpan = fa fa-key [com.webobjects.directtoweb.Assignment],
     10 : (propertyKey = 'website' or propertyKey = 'url') => baseClassForInputSpan = fa fa-link [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForObjectTablePagination = pagination pagination-lg justify-content-center [com.webobjects.directtoweb.Assignment],
     10 : (propertyKey = 'link' or propertyKey like '*URL' or propertyKey like '*ebsite') => inputTypeForObject = url [com.webobjects.directtoweb.Assignment],

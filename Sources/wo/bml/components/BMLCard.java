@@ -38,7 +38,6 @@ public class BMLCard extends D2WCustomComponent {
 		return linkUrl;
 	}
 
-
 	public WOActionResults inspectAction() {
 		InspectPageInterface ipi = D2W.factory().inspectPageForEntityNamed(object().entityName(), session());
 		ipi.setObject(object());
@@ -48,6 +47,10 @@ public class BMLCard extends D2WCustomComponent {
 	
 	public String cardImageSrc() {
 		return valueForD2WKey("card-img-top");
+	}
+
+	public String cardFooterText() {
+		return valueForD2WKey("card-footer");
 	}
 
 	public String cardTitle() {
