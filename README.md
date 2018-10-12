@@ -28,5 +28,30 @@ https://designrevision.com/docs/shards/using-icons.html
 
 D2W Rules control button styles, or provide appending glyphs for forms.
 
+Rules control complex multi-part components, such as Cards which have optional titles, text areas, footers, images in any compbination.
+
+<code>
+      120 : entity.name = 'Mtly' => cardSectionsContents = {"card-img-top" = "object.imageURL"; "card-link" = "object.publicURLString"; "card-text" = "object.title"; "card-title" = "object.venue.title"; } [com.webobjects.directtoweb.Assignment]
+      
+      </code>
+      
+Control the button link, formatting options sizing grid options
+
+https://designrevision.com/docs/shards/cards.html
+
+If you cardSectionsContents dictionary contains a key matching the css pattern in the Card documentation, "card-title" = "object.venue.title"; then that item appears and renders the value of the key path indicated.
+
+Other elements are text/html string details
+
+<code>
+        "card-link-title" = "Tell me more &rarr;"; 
+</code>
+
+Set the repetitionComonentName and turn any list into a complex card or carousel
+
+<code>
+      60 : (pageConfiguration = 'ListMtly-Author' or pageConfiguration = 'ListBookmark-Author') => repetitionComponentName = BMLCardRepetition [com.webobjects.directtoweb.Assignment]
+      </code>
+      
 
 ![Screenshot](screenshot.png)
