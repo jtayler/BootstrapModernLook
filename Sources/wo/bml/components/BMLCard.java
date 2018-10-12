@@ -78,6 +78,6 @@ public class BMLCard extends D2WCustomComponent {
 
 	public String valueForD2WKey(String d2wKey) {
 		String key = (String) keyForD2WKey(d2wKey);
-	    return (String) object().valueForKeyPath(key);
+	    return (String) valueForKeyPath(key);
 	}
 }

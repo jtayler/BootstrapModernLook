@@ -25,5 +25,5 @@ HasTextConditional : ERXNonNullConditional {
 	condition = cardText;
 }
 HasLinkConditional : ERXNonNullConditional {
-	condition = cardLink;
+	condition = cardLinkTitle;
 }

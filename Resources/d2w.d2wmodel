@@ -92,26 +92,8 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForCancelButton"; 
-        "value" = "btn btn-light btn-pill"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForCancelButtonSpan"; 
         "value" = "fa fa-sign-in mr-2"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForSaveButton"; 
-        "value" = "btn btn-primary btn-pill"; 
       }; 
     }, 
     {
@@ -127,6 +109,24 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForInputSpan"; 
         "value" = "fa fa-key"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForSaveButton"; 
+        "value" = "btn btn-outline-primary btn-pill"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForCancelButton"; 
+        "value" = "btn btn-outline-secondary btn-pill"; 
       }; 
     }, 
     {
