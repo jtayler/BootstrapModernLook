@@ -11,10 +11,7 @@ public class BMLBooleanSelector extends ERXBooleanSelector {
 	 * 
 	 * @author jtayler
 	 *
-	 * @binding yesString the string to show for the "Yes" option
-	 * @binding noString the string to show for the "No" option
-	 * @binding noSelectionString the string to show for the "All" option
-	 * @binding selection the selected value
+	 * @binding same as Wonder componenet
 	 */
 	
 	private static final long serialVersionUID = 1L;

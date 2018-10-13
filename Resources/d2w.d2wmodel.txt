@@ -4,6 +4,7 @@
     10 : *true* => cardComponentName = BMLCard [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForObjectTable = table [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForFormInput = form-control [com.webobjects.directtoweb.Assignment],
+    10 : *true* => baseClassForRadioButton = btn btn-light [com.webobjects.directtoweb.Assignment],
     10 : *true* => objectCardContainerClass = container-fluid [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForErrorBlock = alert alert-danger [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForInspectButton = btn btn-primary [com.webobjects.directtoweb.Assignment],

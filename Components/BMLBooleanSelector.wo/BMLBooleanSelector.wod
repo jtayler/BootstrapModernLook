@@ -9,7 +9,7 @@ WOPopUpButton : WOPopUpButton {
   style = ^style;
 }
 
-RadioButtonMatrix: ERXRadioButtonMatrix {
+RadioButtonMatrix: BMLRadioButtonMatrix {
 	item = proxy;
 	list = proxyOptions;
 	maxColumns = 3;

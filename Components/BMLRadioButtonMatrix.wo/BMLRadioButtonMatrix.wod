@@ -1,0 +1,28 @@
+Content: WOComponentContent {
+}
+
+RadioLabel: WOGenericElement {
+	elementName = "label";
+	class = buttonClass;
+}
+
+ActiveClass: WOGenericElement {
+	elementName = "span";
+	class = activeClass;
+}
+
+RadioButton: WOGenericElement {
+	class = activeClass;
+	elementName = "input";
+	name = uniqueID;
+	type = "radio";
+	value = index;
+}
+
+RadioButtonRepetition: WORepetition {
+	item = currentItem;
+	list = ^list;
+	index = index;
+}
+
+

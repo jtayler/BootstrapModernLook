@@ -50,6 +50,15 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForRadioButton"; 
+        "value" = "btn btn-light"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "objectCardContainerClass"; 
         "value" = "container-fluid"; 
       }; 
