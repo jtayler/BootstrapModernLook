@@ -1,6 +1,3 @@
-Content: WOComponentContent {
-}
-
 RadioLabel: WOGenericElement {
 	elementName = "label";
 	class = buttonClass;

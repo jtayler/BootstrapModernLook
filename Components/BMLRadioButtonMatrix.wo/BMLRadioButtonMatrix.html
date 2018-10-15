@@ -1,8 +1,14 @@
-<webobject name=RadioButtonRepetition>
-  <label class="btn btn-light">
-    <webobject name=RadioButton></webobject>
-	<wo:str value="$activeClass" />
-    <webobject name=Content></webobject>
-  </label>
-</webobject>
-	<wo:str value="$activeClass" />
+<!-- see: https://designrevision.com/docs/shards/buttons.html -->
+<div class="btn-group" data-toggle="buttons">
+  <!-- RadioButtonRepetition -->
+  <wo:loop list="$^list" item="$currentItem" index="$index">
+    <!-- NOTE: change condition "index == 1" to something that detects whether the current rep item is the selected item -->
+    <wo:container elementName="label" class="~( 'btn btn-light ' + ( index == 1 ? '' : 'active' ) )" for="~( 'option' + index )">
+      <!-- RadioButton --><!-- class="$activeClass" -->
+      <wo:element elementName="input" type="radio" name="$uniqueID" id="~( 'option' + index )" value="$index" autocomplete="off"/>
+      <wo:str value="$activeClass" />
+      <wo:content />
+    </wo:container>
+  </wo:loop>
+  <wo:str value="$activeClass" />
+</div>
