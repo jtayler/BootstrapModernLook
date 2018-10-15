@@ -134,6 +134,15 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForInputGroup"; 
+        "value" = "input-group input-group-seamless"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForSaveButton"; 
         "value" = "btn btn-outline-primary btn-pill"; 
       }; 
@@ -171,6 +180,33 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForInputSpan"; 
         "value" = "fa fa-link"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "attachmentEditorEditButtonClass"; 
+        "value" = "btn btn-sm btn-pill btn-outline-primary m-2"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "attachmentEditorCancelButtonClass"; 
+        "value" = "btn btn-sm btn-pill btn-outline-secondary m-2"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "attachmentUploadSelectFileButtonClass"; 
+        "value" = "btn btn-sm btn-pill btn-outline-primary m-2"; 
       }; 
     }, 
     {

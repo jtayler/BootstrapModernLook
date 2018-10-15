@@ -12,6 +12,10 @@ Span : WOGenericContainer {
 	elementName = "span";
 	class = d2wContext.baseClassForInputSpan;
 }
+InputGroupDiv : WOGenericContainer {
+	elementName = "DIV";
+	class = d2wContext.baseClassForInputGroup;
+}
 
 EditString: WOTextField {
 	size = length;
