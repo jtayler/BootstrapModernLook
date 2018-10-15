@@ -1,10 +1,11 @@
 package wo.bml.components;
 
 import com.webobjects.appserver.WOContext;
+import com.webobjects.directtoweb.D2WEditBoolean;
 
 import er.directtoweb.components.bool.ERD2WCustomEditBoolean;
 
-public class BMLBooleanSelector extends ERD2WCustomEditBoolean {
+public class BMLBooleanSelector extends D2WEditBoolean {
 	
 	/**
 	 * A custom boolean selector (defaults to "Yes", "No", and "All") for use as, for instance, a boolean search filter.

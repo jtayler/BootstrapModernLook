@@ -1,8 +1,10 @@
-Selector: ERXBooleanSelector {
-	yesString = stringForYes;
-	noString = stringForNo;
-	noSelectionString = stringForNull;
-	selection = objectPropertyValue;
-	uiMode = uiMode;
-}
 
+CheckBox: WOGenericElement {
+	elementName = "input";
+	otherTagString =  ^selection;
+	class = "custom-control-input";
+	id = ^id;
+	name = ^id;
+	type="radio";
+	style = ^style;
+}
