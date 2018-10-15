@@ -1,0 +1,71 @@
+ComponentContent: WOComponentContent {
+}
+
+AjaxSubmit : AjaxSubmitButton {
+	button = false;
+	action = switchSubmitTab;
+	updateContainerID = ^id;
+	class = "nav-link";
+}
+
+AjaxLink : AjaxUpdateLink {
+	action = switchSubmitTab;
+	updateContainerID = ^id;
+	class = "nav-link active";
+}
+
+NotSelectedTab: WOConditional {
+	condition = isCellShaded;
+}
+
+IsSelectedTab: WOConditional {
+	condition = isCellShaded;
+	negate = true;
+}
+
+TabLi: WOGenericContainer { 
+	elementName = "li";
+    class = "nav-item";
+}
+
+TabLabel: WOString {
+	value = currentTabName;
+    class = "nav-link";
+}
+
+TabRepetition: WORepetition {
+	item = currentTab;
+	list = tabs;
+}
+
+TablUl: WOGenericContainer {
+   elementName = "ul";
+   class = "nav nav-tabs card-header-tabs";
+}
+
+TabContentWrapper: ERXUniquingWrapper {
+	id = selectedTabIdentifier;
+}
+
+HasTabs: WOConditional {
+	condition=tabs.count;
+}
+
+HasNoTabs: WOConditional {
+	condition=tabs.count;
+	negate = true;
+}
+
+SubmitForm : WOConditional {
+  condition = dontSubmitForm;
+  negate = true;
+}
+
+DontSubmitForm : WOConditional {
+  condition = dontSubmitForm;
+}
+
+AjaxUpdateContainer : AjaxUpdateContainer {
+  class = "TabPanelWrapper";
+  id = ^id;
+}

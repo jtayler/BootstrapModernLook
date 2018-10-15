@@ -11,18 +11,52 @@ ActiveClass: WOGenericElement {
 	class = activeClass;
 }
 
-RadioButton: WOGenericElement {
-	class = activeClass;
-	elementName = "input";
-	name = uniqueID;
-	type = "radio";
-	value = index;
-}
-
 RadioButtonRepetition: WORepetition {
 	item = currentItem;
 	list = ^list;
 	index = index;
+}
+
+ButtonObserver : AjaxObserveField {
+	observeFieldID = uniqueID;
+	updateContainerID = "radioButtonContainer";
+	fullSubmit = true;
+	action = ^submit;
+}
+
+RadioButton: WORadioButton {
+	class = activeClass;
+	elementName = "input";
+	name = uniqueID;
+	type = "radio";
+	value = selection;
+	selection = ^selected;
+}
+
+Button : WORadioButton {
+	id = uniqueID;
+	checked = ^selected;
+	name = "buttongroup";
+}
+
+Value : WOString {
+	value = currentItem;
+}
+
+Submit : WOSubmitButton {
+	action = ^submit;
+	value = " Regular Submit ";
+}
+
+AjaxSubmit : AjaxSubmitButton {
+	updateContainerID = "radioButtonContainer";
+}
+
+AjaxContainer : AjaxUpdateContainer {
+	id = "radioButtonContainer";
+}
+SelectedItems : WOString {
+  value = selection;
 }
 
 
