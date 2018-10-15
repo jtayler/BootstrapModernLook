@@ -1,13 +1,13 @@
-<webobject name="READONLY">
+<wo:conditional condition=d2wContext.readOnly>
    <webobject name="String" />
-</webobject>
+</wo>
 <wo:conditional condition=d2wContext.readOnly negate=true>
-<webobject name="InputGroupDiv">
+  <webobject name="InputGroupDiv">
    <webobject name="EditString" />
-   <div class="input-group-append">
+     <div class="input-group-append">
       <div class="input-group-text">
       <webobject name="Span" />
       </div>
-   </div>
-</webobject>
+    </div>
+  </webobject>
 </wo>
