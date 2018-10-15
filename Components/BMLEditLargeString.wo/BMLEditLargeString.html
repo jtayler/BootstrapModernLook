@@ -3,12 +3,15 @@
    <script>
       var maxLength = 144;
       var countDiv = $('.bmlcharcount');
-      var textArea = $("#PCUC_EditUser_Bio");
+      var textareas = $( "textarea" );
+      var textarea = null;
+      if (textareas != null) {
+      	textarea = textareas.first();
+      }
+      
 	  var length = textArea.val().length;
       var length = maxLength-length;
       countDiv.html(length);
-
-		alert(textArea);
 
       textArea.keyup(function() {
 	    var length = textArea.val().length;
