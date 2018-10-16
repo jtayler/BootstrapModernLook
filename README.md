@@ -57,5 +57,33 @@ A simple D2W Rule to set "repetitionComonentName" to either "BMLCardRepetition" 
 </code>
 
 
+For your page wrapper you will need to load several js and css files in your header:
+
+<code>
+      <!-- Modern Look Overrides for Shards and Bootstrap -->
+      <wo:ERXStyleSheet framework = "BootstrapModernLook" filename = "ermod-overrides.css" />
+      
+      <!-- App Level css rules and overrides -->
+      <wo:ERXStyleSheet framework = "app" filename = "bootstrap-overrides-10.css" />
+      
+      <!-- Google Maps. Share it and JQuery - Load in the header -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/social-share-kit/1.0.15/js/social-share-kit.min.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdHbqIWdKO_kJg3hnYbldZ3qaUotXBzA4&libraries=places"></script>
+
+      <!-- jQuery UI library with the following - Load in the header   -->
+      <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/shards-ui@2.0.3/dist/js/shards.min.js"></script>
+
+</code>
+
+Popper and Bootstrap must load inside the body area of your page:
+
+<code>
+      <!-- These JS files must load in the body  -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</code>
+
 
 ![Screenshot](screenshot.png)
