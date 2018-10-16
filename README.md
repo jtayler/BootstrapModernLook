@@ -87,3 +87,4 @@ Popper and Bootstrap must load inside the body area of your page:
 
 
 ![Screenshot](screenshot.png)
+
