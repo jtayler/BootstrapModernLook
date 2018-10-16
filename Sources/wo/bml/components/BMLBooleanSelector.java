@@ -4,6 +4,7 @@ import com.webobjects.appserver.WOContext;
 import com.webobjects.directtoweb.D2WEditBoolean;
 
 import er.directtoweb.components.bool.ERD2WCustomEditBoolean;
+import er.extensions.foundation.ERXStringUtilities;
 
 public class BMLBooleanSelector extends D2WEditBoolean {
 	
@@ -16,10 +17,15 @@ public class BMLBooleanSelector extends D2WEditBoolean {
 	 */
 	
 	private static final long serialVersionUID = 1L;
+	private String _itemValue;
 
 	public BMLBooleanSelector(WOContext context) {
         super(context);
     }
+	
+	public String buttonID() {
+		return ERXStringUtilities.safeIdentifierName("button" + _itemValue);
+	}
 	
 	public String uiMode() {
 		return "radio";

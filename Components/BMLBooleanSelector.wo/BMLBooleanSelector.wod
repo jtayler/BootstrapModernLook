@@ -1,5 +1,5 @@
 
-CheckBox: WOGenericElement {
+Input: WOGenericElement {
 	elementName = "input";
 	otherTagString =  ^selection;
 	class = "custom-control-input";
@@ -7,4 +7,28 @@ CheckBox: WOGenericElement {
 	name = ^id;
 	type="radio";
 	style = ^style;
+}
+
+Label: WOGenericElement {
+	elementName = "label";
+	otherTagString =  ^selection;
+	class = "custom-control-label";
+	for = buttonID;
+	id = ^id;
+	name = ^id;
+	type = "radio";
+	style = ^style;
+}
+
+WOCheckbox: WOCheckBox {
+	checked = objectPropertyValue;
+	class = "custom-control-input";
+	id = buttonID;
+	style = ^style;
+	name = "customToggle2";
+}
+
+YesName: ERXLocalizedString {
+	value = ^yesName;
+	valueWhenEmpty = "Yes";
 }
