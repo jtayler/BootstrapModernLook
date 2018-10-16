@@ -13,8 +13,19 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      width:80%;
      max-width: 580px;
      margin:3em auto 3em;
-     background-color:#FeFeFe;
+     background-color:#FEFEFE;
 }
+
+ .CreateWrapper .card-body,.EditWrapper .card-body,.Section .card-body {
+     border-color:#FEFEFE;
+}
+.nav-tabs {
+     margin-bottom:-17px;
+}
+.nav-tabs .nav-link.active {
+     background-color:#FEFEFE;
+}
+
  .Wrapper {
      padding:0;
 }
