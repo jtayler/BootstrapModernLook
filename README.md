@@ -11,7 +11,9 @@ Components accept rule based css tagging for you to adjust the styling of any D2
 https://designrevision.com/docs/shards/buttons.html
 
 <code>
+     
       *true* => baseClassForObjectTable = "table table-borderless table-md"
+
 </code>
 
 
@@ -22,7 +24,9 @@ https://designrevision.com/docs/shards/cards.html
 https://designrevision.com/docs/shards/using-icons.html
 
 <code>
+     
       *true* => baseClassForCancelButtonSpan = "fa fa-sign-in mr-2"
+
 </code>
 
 
@@ -31,6 +35,7 @@ Rules control complex multi-part components, such as Cards or Carousels which ha
 https://designrevision.com/docs/shards/cards.html
 
 <code>
+     
       entity.name = 'Post' => cardSectionsContents = {
             "card-img-top" = "object.imageURL"; 
             "card-link" = "object.publicURLString"; 
@@ -38,13 +43,16 @@ https://designrevision.com/docs/shards/cards.html
             "card-title" = "object.venue.title"; 
             "cardLInkTitle" = "Tell me more &rarr;"; 
       }
+     
 </code>
 
       
 Keypath selector keys controlling Bootsrap elements return values based on the current object and context. Other Keypath selector keys return normal text/html string details, such as cardLInkTitle
 
 <code>
+     
       "cardLInkTitle" = "Tell me more &rarr;"; 
+
 </code>
 
 
@@ -53,13 +61,16 @@ Each component has extends this metaphore so a single rule can control an arbitr
 A simple D2W Rule to set "repetitionComonentName" to either "BMLCardRepetition" or "BMLCarouselRepetition" and turn any list into a complex card or carousel. Empty list messages and batching controls are maintained and styled.
 
 <code>
+     
       60 : (pageConfiguration = 'ListPost-Author' or pageConfiguration = 'ListBookmark-Author') => repetitionComponentName = BMLCardRepetition
+
 </code>
 
 
 For your page wrapper you will need to load several js and css files in your header:
 
 <code>
+     
       <!-- Modern Look Overrides for Shards and Bootstrap -->
       <wo:ERXStyleSheet framework = "BootstrapModernLook" filename = "ermod-overrides.css" />
       
@@ -80,9 +91,11 @@ For your page wrapper you will need to load several js and css files in your hea
 Popper and Bootstrap must load inside the body area of your page:
 
 <code>
+     
       <!-- These JS files must load in the body  -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </code>
 
 
