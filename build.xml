@@ -1,4 +1,4 @@
-<project name="BootsrapModernLook" default="build" basedir=".">
+<project name="BootstrapModernLook" default="build" basedir=".">
 	<target name="build" depends="init.build,build.woframework,javaclient,package" />
 
 	<target name="install" depends="init.install,build.woframework,javaclient" />
