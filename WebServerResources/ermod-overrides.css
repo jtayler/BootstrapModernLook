@@ -59,19 +59,19 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      background-color:transparent;
 }
 
- .Line .LabelWrapper .Label, .Line label {
- 	color:#888;
-  	 font-weight:bold;
+ .Line .LabelWrapper .Label, .Line label,.ComboTHLink .Label {
+	font-weight:bold;
  }
  
  .Line .LabelWrapper {
 	 float: none;
      display:inline;
      padding:0;
+     margin:0;
 }
  .AttrVal {
-     margin-bottom:0.5rem;
-     padding:10px 0;
+     margin-bottom:1rem;
+     padding: 0;
 }
  .ERAttachmentFlexibleEditor .AEEdit {
      width:100%;
@@ -99,7 +99,7 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
 }
  TH {
      text-align: left;
-     font-weight: 400;
+     font-weight: bold;
 }
  .ERMDEmptyList {
      background:none;
