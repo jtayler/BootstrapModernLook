@@ -3,10 +3,15 @@
 </wo>
 <wo:conditional condition=d2wContext.readOnly negate=true>
   <webobject name="InputGroupDiv">
+     <div class="input-group-prepend">
+      <div class="input-group-text">
+      <webobject name="PrependSpan" />
+      </div>
+    </div>
    <webobject name="EditString" />
      <div class="input-group-append">
       <div class="input-group-text">
-      <webobject name="Span" />
+      <webobject name="AppendSpan" />
       </div>
     </div>
   </webobject>

@@ -8,9 +8,13 @@ String : WOString {
 	escapeHTML = d2wContext.escapeHTML;
 }
 
-Span : WOGenericContainer {
+AppendSpan : WOGenericContainer {
 	elementName = "span";
 	class = d2wContext.baseClassForInputSpan;
+}
+PrependSpan : WOGenericContainer {
+	elementName = "span";
+	class = d2wContext.baseClassForPrependInputSpan;
 }
 InputGroupDiv : WOGenericContainer {
 	elementName = "DIV";

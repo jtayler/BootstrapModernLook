@@ -4,13 +4,13 @@ import com.webobjects.appserver.WOContext;
 
 import er.modern.look.pages.*;
 
-public class BootsrapInspectPage extends ERMODInspectPage {
+public class BootstrapInspectPage extends ERMODInspectPage {
     /**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public BootsrapInspectPage(WOContext context) {
+	public BootstrapInspectPage(WOContext context) {
         super(context);
     }
 }

@@ -4,13 +4,13 @@ import com.webobjects.appserver.WOContext;
 
 import er.modern.directtoweb.components.repetitions.ERMDSimpleListPageRepetition;
 
-public class BootsrapModernRepetition extends ERMDSimpleListPageRepetition {
+public class BootstrapModernRepetition extends ERMDSimpleListPageRepetition {
     /**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public BootsrapModernRepetition(WOContext context) {
+	public BootstrapModernRepetition(WOContext context) {
         super(context);
     }
 }
