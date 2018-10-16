@@ -59,6 +59,15 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForInnerWrapper"; 
+        "value" = "card-body"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForRadioButton"; 
         "value" = "btn btn-light"; 
       }; 
@@ -70,15 +79,6 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "objectCardContainerClass"; 
         "value" = "container-fluid"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForErrorBlock"; 
-        "value" = "alert alert-danger"; 
       }; 
     }, 
     {
@@ -103,6 +103,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForInputSpan"; 
         "value" = "fa fa-at"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForErrorBlock"; 
+        "value" = "alert alert-danger mt-2"; 
       }; 
     }, 
     {
