@@ -13,8 +13,9 @@ This framework piggybacks on ERDModernLook and provides rules, css, CDN import l
 These additional components accept rule based tagging for you to adjust the styling of any D2W List Page or input form etc., you might adjust a rule like:
 
 <code>
-      100 : *true* => baseClassForObjectTable = table table-borderless table-md [com.webobjects.directtoweb.Assignment]
+      100 : *true* => baseClassForObjectTable = table table-borderless table-md
 </code>
+
 
 There are also new components for UI elements such as Datepickers, Cards, Buttons, Carousels, Progress Bars and FontAwesome glyphs inside of Input fields.
 
@@ -23,17 +24,18 @@ https://designrevision.com/docs/shards/cards.html
 https://designrevision.com/docs/shards/using-icons.html
 
 <code>
-    10 : *true* => baseClassForCancelButtonSpan = fa fa-sign-in mr-2 [com.webobjects.directtoweb.Assignment]
+    10 : *true* => baseClassForCancelButtonSpan = fa fa-sign-in mr-2
 </code>
+
 
 D2W Rules control button styles, or provide appending glyphs for forms.
 
 Rules control complex multi-part components, such as Cards which have optional titles, text areas, footers, images in any compbination.
 
 <code>
-      120 : entity.name = 'Mtly' => cardSectionsContents = {"card-img-top" = "object.imageURL"; "card-link" = "object.publicURLString"; "card-text" = "object.title"; "card-title" = "object.venue.title"; } [com.webobjects.directtoweb.Assignment]
+      120 : entity.name = 'Mtly' => cardSectionsContents = {"card-img-top" = "object.imageURL"; "card-link" = "object.publicURLString"; "card-text" = "object.title"; "card-title" = "object.venue.title"; }
+</code>
       
-      </code>
       
 Control the button link, formatting options sizing grid options
 
@@ -46,6 +48,7 @@ Other elements are text/html string details
 <code>
         "card-link-title" = "Tell me more &rarr;"; 
 </code>
+
 
 Set the repetitionComonentName and turn any list into a complex card or carousel
 
