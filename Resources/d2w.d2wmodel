@@ -303,6 +303,22 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "apacheShorteningStrings"; 
+        "value" = {
+          "w/ra/Mtly" = "event"; 
+          "w/ra/Person" = "person"; 
+          "w/ra/Venue" = "venue"; 
+          "w/wa/about" = "about"; 
+          "w/wa/home" = "home"; 
+          "w/wa/services" = "services"; 
+        }; 
+      }; 
+    }, 
+    {
+      "author" = "20"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "cardSectionsContents"; 
         "value" = {
           "card-img-top" = "description"; 

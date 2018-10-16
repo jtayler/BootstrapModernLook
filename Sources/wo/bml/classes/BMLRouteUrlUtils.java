@@ -1,6 +1,9 @@
 package wo.bml.classes;
 
+import java.util.Enumeration;
+
 import com.webobjects.appserver.WOContext;
+import com.webobjects.directtoweb.D2WContext;
 import com.webobjects.foundation.NSDictionary;
 
 import er.extensions.eof.ERXGenericRecord;
@@ -15,24 +18,18 @@ public class BMLRouteUrlUtils extends ERXRouteUrlUtils {
 	}
 
 	public static String cleanedLink(String link) {
-		if  (link.contains("/Mtly")) {
-			return link.replace("w/ra/Mtly", "event");
-		}
-		if  (link.contains("/Person")) {
-			return link.replace("w/ra/Person", "person");
-		}
-		if  (link.contains("/Venue")) {
-			return link.replace("w/ra/Venue", "venue");
-		}
-		if  (link.contains("w/wa/about")) {
-			return link.replace("w/wa/about", "about");
-		}
-		if  (link.contains("w/wa/services")) {
-			return link.replace("w/wa/services", "services");
-		}
-		if  (link.contains("w/wa/home")) {
-			return link.replace("w/wa/home", "home");
-		}
+		D2WContext d2wContext = new D2WContext();
+		@SuppressWarnings("rawtypes")
+		NSDictionary dic = (NSDictionary) d2wContext.valueForKey("apacheShorteningStrings");
+		Enumeration<?> e = dic.allKeys().objectEnumerator();
+	    while (e.hasMoreElements()) {
+	    	String key = (String) e.nextElement();
+			if  (link.contains(key)) {
+				String value = (String) dic.valueForKey(key);
+				link = link.replace(key, value);
+			}
+	      }
+		
 		return link;
 	}
 	

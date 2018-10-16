@@ -25,6 +25,7 @@
     10 : (propertyKey like '*website*' or propertyKey like '*url*' or propertyKey like '*link*') => baseClassForInputSpan = fa fa-link [com.webobjects.directtoweb.Assignment],
     20 : *true* => objectCardColumnClass = col-sm pb-4 [com.webobjects.directtoweb.Assignment],
     20 : look = 'ERModernLook' => emptyListComponentName = ERMDEmptyListMessage [com.webobjects.directtoweb.Assignment],
+    20 : *true* => apacheShorteningStrings = {"w/ra/Mtly" = "event"; "w/ra/Person" = "person"; "w/ra/Venue" = "venue"; "w/wa/about" = "about"; "w/wa/home" = "home"; "w/wa/services" = "services"; } [com.webobjects.directtoweb.Assignment],
     20 : *true* => cardSectionsContents = {"card-img-top" = "description"; "card-link" = "description"; "card-link-title" = "Tell me more &rarr;"; "card-text" = "description"; "card-title" = "description"; } [com.webobjects.directtoweb.Assignment],
     20 : *true* => carouselSectionsContents = {"card-img-top" = "description"; "card-link" = "description"; "card-link-title" = "Tell me more &rarr;"; "card-text" = "description"; "card-title" = "description"; } [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => templateNameForInspectPage = BootstrapInspectPage [com.webobjects.directtoweb.Assignment],
