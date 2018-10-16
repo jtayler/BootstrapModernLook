@@ -59,6 +59,15 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForEmptyListBlock"; 
+        "value" = "alert"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForFormInput"; 
         "value" = "form-control"; 
       }; 
@@ -286,21 +295,6 @@
     {
       "author" = "20"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
-      "lhs" = {
-        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-        "key" = "look"; 
-        "selectorName" = "isEqualTo"; 
-        "value" = "ERModernLook"; 
-      }; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "emptyListComponentName"; 
-        "value" = "ERMDEmptyListMessage"; 
-      }; 
-    }, 
-    {
-      "author" = "20"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "apacheShorteningStrings"; 
@@ -342,6 +336,21 @@
           "card-text" = "description"; 
           "card-title" = "description"; 
         }; 
+      }; 
+    }, 
+    {
+      "author" = "40"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "look"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "ERModernLook"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "emptyListComponentName"; 
+        "value" = "BMLEmptyListMessage"; 
       }; 
     }, 
     {
@@ -604,6 +613,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "componentName"; 
         "value" = "BMLEditString"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "emptyListMessage"; 
+        "value" = "Nothing Found"; 
       }; 
     }, 
     {

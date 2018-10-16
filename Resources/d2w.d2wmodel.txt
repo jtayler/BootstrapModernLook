@@ -5,6 +5,7 @@
     10 : *true* => cardComponentName = BMLCard [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForObjectTable = table [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForPrependInputSpan =  [com.webobjects.directtoweb.Assignment],
+    10 : *true* => baseClassForEmptyListBlock = alert [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForFormInput = form-control [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForInnerWrapper = card-body [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForRadioButton = btn btn-light [com.webobjects.directtoweb.Assignment],
@@ -24,10 +25,10 @@
     10 : (propertyKey = 'link' or propertyKey like '*URL' or propertyKey like '*ebsite') => inputTypeForObject = url [com.webobjects.directtoweb.Assignment],
     10 : (propertyKey like '*website*' or propertyKey like '*url*' or propertyKey like '*link*') => baseClassForInputSpan = fa fa-link [com.webobjects.directtoweb.Assignment],
     20 : *true* => objectCardColumnClass = col-sm pb-4 [com.webobjects.directtoweb.Assignment],
-    20 : look = 'ERModernLook' => emptyListComponentName = ERMDEmptyListMessage [com.webobjects.directtoweb.Assignment],
     20 : *true* => apacheShorteningStrings = {"w/ra/Mtly" = "event"; "w/ra/Person" = "person"; "w/ra/Venue" = "venue"; "w/wa/about" = "about"; "w/wa/home" = "home"; "w/wa/services" = "services"; } [com.webobjects.directtoweb.Assignment],
     20 : *true* => cardSectionsContents = {"card-img-top" = "description"; "card-link" = "description"; "card-link-title" = "Tell me more &rarr;"; "card-text" = "description"; "card-title" = "description"; } [com.webobjects.directtoweb.Assignment],
     20 : *true* => carouselSectionsContents = {"card-img-top" = "description"; "card-link" = "description"; "card-link-title" = "Tell me more &rarr;"; "card-text" = "description"; "card-title" = "description"; } [com.webobjects.directtoweb.Assignment],
+    40 : look = 'ERModernLook' => emptyListComponentName = BMLEmptyListMessage [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => templateNameForInspectPage = BootstrapInspectPage [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => templateNameForTabInspectPage = BMLTabInspectPage [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => batchNavigationBarComponentName = BMLBatchNavigationBar [com.webobjects.directtoweb.Assignment],
@@ -36,5 +37,6 @@
     40 : (task = 'list' or task = 'select' or (task = 'edit' and subTask = 'list')) => repetitionComponentName = BootstrapModernRepetition [com.webobjects.directtoweb.Assignment],
     40 : (task = 'edit' and (smartAttribute.className = 'java.lang.Boolean' or ((smartAttribute.userInfo.erPrototype = 'Boolean' or smartAttribute.userInfo.erPrototype = 'BooleanYesNo') and (smartAttribute.className = 'java.math.BigDecimal' or smartAttribute.className = 'java.lang.Number')))) => componentName = BMLBooleanSelector [com.webobjects.directtoweb.Assignment],
     46 : (task = 'edit' and smartAttribute.className = 'java.lang.String' and smartAttribute.width >= 110 and staySmall = '1') => componentName = BMLEditString [com.webobjects.directtoweb.Assignment],
+    60 : *true* => emptyListMessage = Nothing Found [com.webobjects.directtoweb.Assignment],
     60 : (propertyKey = 'password' and task = 'edit') => componentName = BMLEditPassword [com.webobjects.directtoweb.Assignment]
 )
