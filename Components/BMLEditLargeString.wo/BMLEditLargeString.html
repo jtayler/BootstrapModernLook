@@ -1,22 +1,15 @@
-<div class="bmlcharcount"><wo:str value="$d2wContext.id" /></div>
+<span id="count_message"></span>
 <WEBOBJECT NAME=EditString></WEBOBJECT>
-   <script>
-      var maxLength = 144;
-      var countDiv = $('.bmlcharcount');
-      var textareas = $( "textarea" );
-      var textarea = null;
-      if (textareas != null) {
-      	textarea = textareas.first();
-      }
-      
-	  var length = textArea.val().length;
-      var length = maxLength-length;
-      countDiv.html(length);
+<script>
+    $(document).ready(function(){
+      var text_max = <wo:str value="$d2wContext.maxLength" />;
+      $('#count_message').html( text_max );
 
-      textArea.keyup(function() {
-	    var length = textArea.val().length;
-        var length = maxLength-length;
-        countDiv.html(length);
-	  });
-      
-   </script>
+      $('#textarea').keyup(function() {
+        var text_length = $('#textarea').val().length;
+        var text_remaining = text_max - text_length;
+  
+        $('#count_message').html( text_remaining );
+      });      
+    });
+</script>
