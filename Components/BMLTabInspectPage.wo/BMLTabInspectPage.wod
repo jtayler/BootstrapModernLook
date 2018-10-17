@@ -101,6 +101,11 @@ BottomActionBlock : WOGenericContainer {
 	class = d2wContext.classForBottomActionBlock;
 }
 
+PageContainerClass : WOGenericContainer {
+	elementName = "div";
+	class = d2wContext.classForPageContainer;
+}
+
 RequiredWrapper : ERMODRequiredWrapper {
 	d2wContext = d2wContext;
 	watchedContainerID = d2wContext.idForPageTabContainer;

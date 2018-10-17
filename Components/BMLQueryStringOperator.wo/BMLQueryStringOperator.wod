@@ -1,0 +1,21 @@
+NumberField: WOTextField {
+	size = length;
+	value = value;
+	placeholder = d2wContext.name;
+	name = d2wContext.name;
+	class = "form-control";
+}
+
+OperatorPopUp: WOPopUpButton {
+	list = allQualifierOperators;
+	selection = selectedElement;
+	item = currentElement;
+	displayString = currentElement.value;
+	class = "custom-select border-0 rounded-left-0";
+	style = "background-color:transparent";
+}
+
+InputGroupDiv : WOGenericContainer {
+	elementName = "DIV";
+	class = d2wContext.baseClassForInputGroup;
+}

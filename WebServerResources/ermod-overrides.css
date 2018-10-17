@@ -6,16 +6,31 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      margin:1rem;
      margin-left:0rem;
 }
- .CreateWrapper .card-body,.EditWrapper .card-body,.Section .card-body {
-     padding:1rem;
+ .QueryAllWrapper .card {
+ 	padding:1rem;
+ }
+ .CreateWrapper .card-body,.EditWrapper .card-body,.Section .card-body,.QueryAllWrapper .card-body {
 }
- .CreateWrapper .card, form .card,.EditWrapper .card,.Section .card {
+ .Wrapper .card {
+     background-color:#FEFEFE;
+ }
+ .InspectWrapper .card {
+     width:100%;
+     max-width: 100%;
+     box-shadow: none;
+     border: none;
+     border-radius: 0 !important;
+ }
+.CreateWrapper .card, .EditWrapper .card, .Section .card,.QueryWrapper .card {
      width:80%;
      max-width: 580px;
-     margin:3em auto 3em;
-     background-color:#FEFEFE;
+     margin: 3rem auto 3rem;
 }
-
+.QueryAllWrapper .card {
+     width:90%;
+     max-width: 100%;
+     margin: 2rem auto 2rem;
+}
  H2, H3 {
      font-weight: 300;
      font-size:150%;
@@ -31,13 +46,11 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      background-color:#FEFEFE;
 }
 
+ .QueryAttrVal {
+	display:inline;
+}
  .Wrapper {
      padding:0;
-}
- .content .form-control {
-     padding: 12px 15px !important;
-     font-size: 90%;
-     min-height:47px;
 }
  .BottomBatchNav {
      width:100%;
@@ -84,9 +97,6 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      -webkit-box-shadow:none;
      -moz-box-shadow:none;
      box-shadow:none;
-}
- .form-control, .Line input, .Line textarea {
-     width: 100%;
 }
  .ErrorLabel{
      color: #c4183c !important;
@@ -171,6 +181,7 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      padding-top:0.5rem;
 }
  .navbar {
+ 	min-height:108px;
      border:1px solid rgba(0, 0, 0, .125);
      box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, .125);
      font-weight: 400;
@@ -179,7 +190,7 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      background-color: #f9faff !important;
 }
  @media screen and (max-width: 768px) {
-     .CreateWrapper .card,.EditWrapper .card,.Section .card {
+     .CreateWrapper .card,.EditWrapper .card,.Section .card ,.Wrapper .card {
          margin: 0 auto 0;
          width:100%;
          max-width: 100%;
