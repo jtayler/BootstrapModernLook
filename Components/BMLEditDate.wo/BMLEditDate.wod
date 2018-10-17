@@ -1,0 +1,8 @@
+TextField1: WOGenericContainer {
+	elementName = "input";
+	class = "form-control";
+	name = name;
+	id = "datepicker";
+	value = dateString;
+	type="text";
+}
