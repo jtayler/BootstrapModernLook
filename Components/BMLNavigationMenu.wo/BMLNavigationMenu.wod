@@ -1,0 +1,9 @@
+NavItems: WORepetition {
+	item = aNavigationItem;
+	list = level1Items;
+}
+
+NavObject: BMLNavigationMenuItem {
+	navigationItem = aNavigationItem;
+    level=1;
+}

@@ -9,11 +9,16 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
  .CreateWrapper .card-body,.EditWrapper .card-body,.Section .card-body {
      padding:1rem;
 }
- .CreateWrapper .card,.EditWrapper .card,.Section .card {
+ .CreateWrapper .card, form .card,.EditWrapper .card,.Section .card {
      width:80%;
      max-width: 580px;
      margin:3em auto 3em;
      background-color:#FEFEFE;
+}
+
+ H2, H3 {
+     font-weight: 300;
+     font-size:150%;
 }
 
  .CreateWrapper .card-body,.EditWrapper .card-body,.Section .card-body {
@@ -43,7 +48,7 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      background-color: transparent;
 }
 
- .EditHeader H1.PageHeader,.CreateHeader H1.PageHeader,.ListHeader H1.PageHeader {
+.PageHeader {
      display: none;
 }
  .BtmActions {
