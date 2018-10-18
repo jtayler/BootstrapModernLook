@@ -32,6 +32,15 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "pageContainerClass"; 
+        "value" = "card"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "cardComponentName"; 
         "value" = "BMLCard"; 
       }; 
@@ -43,15 +52,6 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForPrependInputSpan"; 
         "value" = ""; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForEmptyListBlock"; 
-        "value" = "alert"; 
       }; 
     }, 
     {
@@ -86,35 +86,8 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForEditButton"; 
-        "value" = "btn btn-primary"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForSaveButton"; 
-        "value" = "btn btn-primary"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "objectCardContainerClass"; 
         "value" = "container-fluid"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForInspectButton"; 
-        "value" = "btn btn-secondary"; 
       }; 
     }, 
     {
@@ -146,8 +119,17 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForCancelButtonSpan"; 
-        "value" = "fa fa-sign-in mr-2"; 
+        "keyPath" = "baseClassForFindButton"; 
+        "value" = "btn btn-primary mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForSaveButton"; 
+        "value" = "btn btn-primary mr-4 mb-4"; 
       }; 
     }, 
     {
@@ -170,8 +152,26 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForCancelButton"; 
-        "value" = "btn btn-outline-secondary"; 
+        "keyPath" = "baseClassForCancelButtonSpan"; 
+        "value" = "fa fa-sign-in mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForInspectButton"; 
+        "value" = "btn btn-secondary mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForEmptyListBlock"; 
+        "value" = "alert alert-dismissible m-2"; 
       }; 
     }, 
     {
@@ -188,8 +188,43 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForFindButton"; 
-        "value" = "btn btn-pill btn-sm btn-outline-primary m-4"; 
+        "keyPath" = "baseClassForEditButton"; 
+        "value" = "btn btn-outline-primary mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForCancelButton"; 
+        "value" = "btn btn-outline-secondary mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "inspect"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "list"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "pageContainerClass"; 
+        "value" = "jumbotron-fluid"; 
       }; 
     }, 
     {
@@ -316,7 +351,36 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForInputGroup"; 
-        "value" = "input-group input-group-lg mb-3"; 
+        "value" = "input-group input-group-lg mb-3 "; 
+      }; 
+    }, 
+    {
+      "author" = "20"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "query"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "smartRelationship.isToMany"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = {
+              "class" = "java.lang.Number"; 
+              "value" = "1"; 
+            }; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "componentName"; 
+        "value" = "BMLQueryToManyField"; 
       }; 
     }, 
     {
@@ -383,6 +447,43 @@
     {
       "author" = "20"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "query"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+            "qualifiers" = (
+              {
+                "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+                "key" = "smartAttribute.className"; 
+                "selectorName" = "isEqualTo"; 
+                "value" = "java.lang.Number"; 
+              }, 
+              {
+                "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+                "key" = "smartAttribute.className"; 
+                "selectorName" = "isEqualTo"; 
+                "value" = "java.math.BigDecimal"; 
+              }
+            ); 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "componentName"; 
+        "value" = "BMLQueryNumberRange"; 
+      }; 
+    }, 
+    {
+      "author" = "20"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "apacheShorteningStrings"; 
@@ -401,7 +502,7 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "cardSectionsContents"; 
+        "keyPath" = "carouselSectionsContents"; 
         "value" = {
           "card-img-top" = "description"; 
           "card-link" = "description"; 
@@ -416,14 +517,22 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "carouselSectionsContents"; 
+        "keyPath" = "cardSectionsContents"; 
         "value" = {
-          "card-img-top" = "description"; 
-          "card-link" = "description"; 
           "card-link-title" = "Tell me more &rarr;"; 
-          "card-text" = "description"; 
-          "card-title" = "description"; 
+          "card-text" = "object.description"; 
+          "card-title" = "object.description"; 
+          "cardLink" = "https://designrevision.com/docs/shards/images/1.jpg"; 
         }; 
+      }; 
+    }, 
+    {
+      "author" = "40"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
+        "keyPath" = "isEntitySmartEditable"; 
+        "value" = "true"; 
       }; 
     }, 
     {
@@ -739,7 +848,7 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "emptyListMessage"; 
-        "value" = "Nothing Found"; 
+        "value" = "None Found"; 
       }; 
     }, 
     {
@@ -801,31 +910,6 @@
         "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
         "keyPath" = "isEntityInspectable"; 
         "value" = "false"; 
-      }; 
-    }, 
-    {
-      "author" = "100"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "lhs" = {
-        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
-        "qualifiers" = (
-          {
-            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-            "key" = "RuleIsDisabled"; 
-            "selectorName" = "isEqual"; 
-            "value" = "YES"; 
-          }
-        ); 
-      }; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "stylesheets"; 
-        "value" = (
-          "defaultMainScreenStylesheet", 
-          "ermod-overrides.css", 
-          "defaultMainPrintStylesheet", 
-          "datepickerStylesheet"
-        ); 
       }; 
     }, 
     {

@@ -3,6 +3,11 @@ CancelButtonSpan : WOGenericContainer {
 	class = d2wContext.baseClassForCancelButtonSpan;
 }
 
+PageClass : WOGenericContainer {
+	elementName = "div";
+	class = d2wContext.pageContainerClass;
+}
+
 CancelButton: CCSmartAjaxButton {
 	alt = "Reverts your changes";
 	action = cancelAction;
@@ -22,7 +27,16 @@ EditButton: CCSmartAjaxButton {
 	action = editAction;
 	alt = "Edits this object";
 	value = d2wContext.editButtonLabel;
-	class = d2wContext.baseClassForSaveButton;
+	class = d2wContext.baseClassForEditButton;
+	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
+    updateContainerID = d2wContext.idForParentMainContainer;
+}
+
+SmartEditButton: CCSmartAjaxButton {
+	action = editAction;
+	alt = "Edits this object";
+	value = d2wContext.editButtonLabel;
+	class = d2wContext.baseClassForEditButton;
 	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
     updateContainerID = d2wContext.idForParentMainContainer;
 }
@@ -50,6 +64,10 @@ IsNotEditingConditional: WOConditional {
 
 IsObjectEditable: WOConditional {
 	condition = isObjectEditable;
+}
+
+IsObjectSmartEditable: WOConditional {
+	condition = d2wContext.isEntitySmartEditable;
 }
 
 PageWrapper: WOSwitchComponent {

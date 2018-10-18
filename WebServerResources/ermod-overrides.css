@@ -2,24 +2,18 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      text-rendering:optimizeLegibility;
      -webkit-font-smoothing: antialiased;
 }
- .ActionList a {
-     margin:1rem;
-     margin-left:0rem;
-}
  .QueryAllWrapper .card {
  	padding:1rem;
  }
  .CreateWrapper .card-body,.EditWrapper .card-body,.Section .card-body,.QueryAllWrapper .card-body {
-}
+	}
  .Wrapper .card {
      background-color:#FEFEFE;
  }
- .InspectWrapper .card {
-     width:100%;
+ .InspectTabWrapper .card, .InspectWrapper .card {
+     width:80%;
      max-width: 100%;
-     box-shadow: none;
-     border: none;
-     border-radius: 0 !important;
+      margin: 3rem auto 3rem;
  }
 .CreateWrapper .card, .EditWrapper .card, .Section .card,.QueryWrapper .card {
      width:80%;

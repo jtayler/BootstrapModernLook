@@ -101,6 +101,10 @@ BottomActionBlock : WOGenericContainer {
 	class = d2wContext.classForBottomActionBlock;
 }
 
+PageClass : WOGenericContainer {
+	elementName = "div";
+	class = d2wContext.pageContainerClass;
+}
 PageContainerClass : WOGenericContainer {
 	elementName = "div";
 	class = d2wContext.classForPageContainer;

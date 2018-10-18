@@ -61,6 +61,10 @@ public class BMLCard extends D2WCustomComponent {
 		return valueForD2WKey("card-link");
 	}
 	
+	public String cardLinkString() {
+		return keyForD2WKey("cardImageLink");
+	}
+	
 	public String cardLinkTitle() {
 		return keyForD2WKey("card-link-title");
 	}
