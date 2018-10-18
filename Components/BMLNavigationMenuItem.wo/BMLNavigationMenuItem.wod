@@ -2,6 +2,11 @@ hasActivityAndIsEnabled: WOConditional {
 	condition = hasActivityAndIsEnabled;
 }
 
+level2Items: WORepetition {
+	item = d2wContext.aNavigationItem;
+	list = items;
+}
+
 hasNoActivityAndIsEnabled: WOConditional {
 	condition = hasActivityAndIsEnabled;
 	negate = true;

@@ -17,6 +17,7 @@
     10 : *true* => baseClassForCancelButtonSpan = fa fa-sign-in mr-4 mb-4 [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForInspectButton = btn btn-secondary mr-4 mb-4 [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForEmptyListBlock = alert alert-dismissible m-2 [com.webobjects.directtoweb.Assignment],
+    10 : *true* => baseClassForCreateButton = btn btn-outline-info mr-4 mb-4 [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForObjectTable = table table-borderless table-sm [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForEditButton = btn btn-outline-primary mr-4 mb-4 [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForCancelButton = btn btn-outline-secondary mr-4 mb-4 [com.webobjects.directtoweb.Assignment],
@@ -38,6 +39,7 @@
     20 : *true* => carouselSectionsContents = {"card-img-top" = "description"; "card-link" = "description"; "card-link-title" = "Tell me more &rarr;"; "card-text" = "description"; "card-title" = "description"; } [com.webobjects.directtoweb.Assignment],
     20 : *true* => cardSectionsContents = {"card-link-title" = "Tell me more &rarr;"; "card-text" = "object.description"; "card-title" = "object.description"; "cardLink" = "https://designrevision.com/docs/shards/images/1.jpg"; } [com.webobjects.directtoweb.Assignment],
     40 : *true* => isEntitySmartEditable = true [com.webobjects.directtoweb.BooleanAssignment],
+    40 : *true* => isEntitySmartCreatable = true [com.webobjects.directtoweb.BooleanAssignment],
     40 : look = 'ERModernLook' => templateNameForQueryPage = BMLQueryPage [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => templateNameForListPage = BMLTabInspectPage [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => emptyListComponentName = BMLEmptyListMessage [com.webobjects.directtoweb.Assignment],
@@ -53,6 +55,7 @@
     60 : (propertyKey = 'password' and task = 'edit') => componentName = BMLEditPassword [com.webobjects.directtoweb.Assignment],
     64 : (task = 'edit' and smartAttribute.className = 'java.lang.String') => componentName = BMLEditString [com.webobjects.directtoweb.Assignment],
     100 : *true* => isEntityInspectable = false [com.webobjects.directtoweb.BooleanAssignment],
+    100 : look = 'ERModernLook' => templateNameForWizardCreationPage = BootstrapInspectPage [com.webobjects.directtoweb.Assignment],
     110 : *true* => isEntityEditable = false [com.webobjects.directtoweb.BooleanAssignment],
     110 : *true* => isEntityDeletable = false [com.webobjects.directtoweb.BooleanAssignment],
     200 : (task = list and (propertyKey = 'name' or propertyKey = 'title')) => componentName = ERMD2WInspectLink [com.webobjects.directtoweb.Assignment]

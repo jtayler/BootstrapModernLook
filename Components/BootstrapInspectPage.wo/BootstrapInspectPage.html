@@ -6,7 +6,11 @@
         <webobject name="ShouldShowDefaultPageButtons">
           <ul class = "ActionList">
             <webobject name = "IsEditingConditional">
-              <li><webobject name = "CancelButtonSpan" /><webobject name = "CancelButton" /></li>
+              <li><webobject name = "CancelButtonSpan" />
+				<webobject name = "CancelButton">
+                <webobject name = "CancelButtonSpan" />                
+                </webobject>
+                </li>
               <li><webobject name = "SubmitChanges" /></li>
             </webobject>
             <webobject name = "IsNotEditingConditional">
@@ -47,6 +51,9 @@
               </webobject>
               <webobject name = "IsObjectSmartEditable">
                 <li><webobject name = "SmartEditButton" /></li>
+              </webobject>
+              <webobject name = "IsObjectSmartCreatable">
+                <li><webobject name = "SmartCreateButton" /></li>
               </webobject>
             </webobject>
           </ul>

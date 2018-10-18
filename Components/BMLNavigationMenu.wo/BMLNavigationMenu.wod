@@ -6,4 +6,9 @@ NavItems: WORepetition {
 NavObject: BMLNavigationMenuItem {
 	navigationItem = aNavigationItem;
     level=1;
+    items = level2Items;
+}
+level2Items: WORepetition {
+	item = aNavigationItem;
+	list = level2Items;
 }

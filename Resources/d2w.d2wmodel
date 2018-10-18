@@ -179,6 +179,15 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForCreateButton"; 
+        "value" = "btn btn-outline-info mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForObjectTable"; 
         "value" = "table table-borderless table-sm"; 
       }; 
@@ -532,6 +541,15 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
         "keyPath" = "isEntitySmartEditable"; 
+        "value" = "true"; 
+      }; 
+    }, 
+    {
+      "author" = "40"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
+        "keyPath" = "isEntitySmartCreatable"; 
         "value" = "true"; 
       }; 
     }, 
@@ -910,6 +928,21 @@
         "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
         "keyPath" = "isEntityInspectable"; 
         "value" = "false"; 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "look"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "ERModernLook"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "templateNameForWizardCreationPage"; 
+        "value" = "BootstrapInspectPage"; 
       }; 
     }, 
     {

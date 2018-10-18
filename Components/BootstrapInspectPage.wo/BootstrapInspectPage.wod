@@ -32,6 +32,15 @@ EditButton: CCSmartAjaxButton {
     updateContainerID = d2wContext.idForParentMainContainer;
 }
 
+SmartCreateButton: CCSmartAjaxButton {
+	action = smartCreateAction;
+	alt = "Create new object";
+	value = d2wContext.createButtonLabel;
+	class = d2wContext.baseClassForCreateButton;
+	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
+    updateContainerID = d2wContext.idForParentMainContainer;
+}
+
 SmartEditButton: CCSmartAjaxButton {
 	action = editAction;
 	alt = "Edits this object";
@@ -68,6 +77,9 @@ IsObjectEditable: WOConditional {
 
 IsObjectSmartEditable: WOConditional {
 	condition = d2wContext.isEntitySmartEditable;
+}
+IsObjectSmartCreatable: WOConditional {
+	condition = d2wContext.isEntitySmartCreatable;
 }
 
 PageWrapper: WOSwitchComponent {
