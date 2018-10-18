@@ -397,7 +397,7 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "componentName"; 
-        "value" = "ERD2WEditNumber"; 
+        "value" = "BMLEditNumber"; 
       }; 
     }, 
     {
