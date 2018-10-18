@@ -9,8 +9,10 @@ import com.webobjects.directtoweb.D2WPage;
 import com.webobjects.directtoweb.EditPageInterface;
 import com.webobjects.directtoweb.InspectPageInterface;
 import com.webobjects.directtoweb.NextPageDelegate;
+import com.webobjects.directtoweb.QueryPageInterface;
 import com.webobjects.eocontrol.EOGenericRecord;
 
+import er.directtoweb.pages.ERD2WQueryPage;
 import er.extensions.appserver.ERXSession;
 import er.extensions.eof.ERXGenericRecord;
 import er.modern.look.pages.*;
@@ -21,7 +23,7 @@ public class BootstrapInspectPage extends ERMODInspectPage implements NextPageDe
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	WOComponent nextPage = context().page();
+	WOComponent nextPage;
 	
 	public BootstrapInspectPage(WOContext context) {
         super(context);
@@ -33,6 +35,13 @@ public class BootstrapInspectPage extends ERMODInspectPage implements NextPageDe
 		 ERXGenericRecord object = (ERXGenericRecord) object();
 		 nextPage.setObject(object);
 		 nextPage.setNextPageDelegate(this);
+		return (WOActionResults) nextPage;
+	}
+	
+	public WOActionResults smartFindAction() {
+		nextPage = this;
+		 QueryPageInterface nextPage = D2W.factory().queryPageForEntityNamed(d2wContext().entity().name(), session());
+		 //nextPage.setNextPageDelegate(this);
 		return (WOActionResults) nextPage;
 	}
 	
@@ -55,12 +64,18 @@ public class BootstrapInspectPage extends ERMODInspectPage implements NextPageDe
 	@Override
 	public WOComponent nextPage(WOComponent sender) {
 		 D2WPage page = (D2WPage) sender;
-		 ERXGenericRecord object = (ERXGenericRecord) page.object();
-		 if (!object.isNewObject()) {
-			 return (WOComponent) smartInspectAction(object);
+		 if (page instanceof QueryPageInterface) {
+			 ERD2WQueryPage qp = (ERD2WQueryPage) page;
+			 return qp.returnPage;
+		 } else {
+			 ERXGenericRecord object = (ERXGenericRecord) page.object();
+			 if (!object.isNewObject()) {
+				 return (WOComponent) smartInspectAction(object);
+			 }
 		 }
+
 		 
-		 return nextPage;
+		 return this;
 	}
 
 }

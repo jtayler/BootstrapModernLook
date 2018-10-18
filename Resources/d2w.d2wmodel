@@ -75,6 +75,21 @@
     {
       "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "task"; 
+        "selectorName" = "isNotEqualTo"; 
+        "value" = "query"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "findButtonLabel"; 
+        "value" = "Search"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForFormInput"; 
@@ -137,15 +152,6 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForFindButton"; 
-        "value" = "btn btn-primary mr-4 mb-4"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForSaveButton"; 
         "value" = "btn btn-primary mr-4 mb-4"; 
       }; 
@@ -197,6 +203,15 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForFindButton"; 
+        "value" = "btn btn-outline-light mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForCreateButton"; 
         "value" = "btn btn-outline-info mr-4 mb-4"; 
       }; 
@@ -217,6 +232,21 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForEditButton"; 
         "value" = "btn btn-outline-primary mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "task"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "query"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForFindButton"; 
+        "value" = "btn btn-primary mr-4 mb-4"; 
       }; 
     }, 
     {
@@ -412,6 +442,21 @@
     {
       "author" = "20"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "task"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "list"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
+        "keyPath" = "shouldShowDefaultPageButtons"; 
+        "value" = "false"; 
+      }; 
+    }, 
+    {
+      "author" = "20"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForInputGroup"; 
@@ -586,7 +631,7 @@
           "card-link-title" = "Tell me more &rarr;"; 
           "card-text" = "object.description"; 
           "card-title" = "object.description"; 
-          "cardLink" = "https://designrevision.com/docs/shards/images/1.jpg"; 
+          "cardLink" = "https://designrevision.com/docs/shards/images/3.jpg"; 
         }; 
       }; 
     }, 
@@ -596,6 +641,15 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
         "keyPath" = "isEntitySmartEditable"; 
+        "value" = "true"; 
+      }; 
+    }, 
+    {
+      "author" = "40"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
+        "keyPath" = "isEntitySmartFindable"; 
         "value" = "true"; 
       }; 
     }, 

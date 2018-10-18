@@ -41,6 +41,15 @@ SmartCreateButton: CCSmartAjaxButton {
     updateContainerID = d2wContext.idForParentMainContainer;
 }
 
+SmartFindButton: CCSmartAjaxButton {
+	action = smartFindAction;
+	alt = "Search for object";
+	value = d2wContext.findButtonLabel;
+	class = d2wContext.baseClassForFindButton;
+	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
+    updateContainerID = d2wContext.idForParentMainContainer;
+}
+
 SmartEditButton: CCSmartAjaxButton {
 	action = smartEditAction;
 	alt = "Edits this object";
@@ -80,6 +89,9 @@ IsObjectSmartEditable: WOConditional {
 }
 IsObjectSmartCreatable: WOConditional {
 	condition = d2wContext.isEntitySmartCreatable;
+}
+IsObjectSmartFindable: WOConditional {
+	condition = d2wContext.isEntitySmartFindable;
 }
 
 PageWrapper: WOSwitchComponent {
