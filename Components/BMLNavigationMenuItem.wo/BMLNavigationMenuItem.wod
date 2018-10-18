@@ -16,7 +16,7 @@ contextComponentActionURL: WOGenericContainer {
 	elementName = "a";
 	href = contextComponentActionURL;
 	invokeAction = menuItemSelected;
-	class="nav-link";
+    class = linkClass;
 }
 
 NewMarker: WOImage {
