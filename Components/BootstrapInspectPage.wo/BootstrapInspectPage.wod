@@ -42,7 +42,7 @@ SmartCreateButton: CCSmartAjaxButton {
 }
 
 SmartEditButton: CCSmartAjaxButton {
-	action = editAction;
+	action = smartEditAction;
 	alt = "Edits this object";
 	value = d2wContext.editButtonLabel;
 	class = d2wContext.baseClassForEditButton;

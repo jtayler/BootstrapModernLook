@@ -28,8 +28,11 @@ public class BootstrapInspectPage extends ERMODInspectPage implements NextPageDe
     }
 	
 	public WOActionResults smartEditAction() {
+		nextPage = context().page();
 		 EditPageInterface nextPage = D2W.factory().editPageForEntityNamed(d2wContext().entity().name(), session());
-		 nextPage.setNextPage(context().page());
+		 ERXGenericRecord object = (ERXGenericRecord) object();
+		 nextPage.setObject(object);
+		 nextPage.setNextPageDelegate(this);
 		return (WOActionResults) nextPage;
 	}
 	

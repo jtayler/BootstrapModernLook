@@ -2,11 +2,11 @@ CardLinkTitled: WOHyperlink {
 	escapeHTML=false;
 	string = cardLinkTitle;
 	//href = linkURL;
-	href = cardLink;
+	action = inspectAction;
 	class = d2wContext.baseClassForInspectButton;
 }
 CardLink: WOHyperlink {
-	href = cardLink;
+	action = inspectAction;
 }
 HasCardLinkString : ERXNonNullConditional {
 	condition = cardLinkString;

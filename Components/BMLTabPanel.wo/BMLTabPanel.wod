@@ -1,6 +1,7 @@
 ComponentContent: WOComponentContent {
 }
 
+
 AjaxSubmit : AjaxSubmitButton {
 	button = false;
 	action = switchSubmitTab;

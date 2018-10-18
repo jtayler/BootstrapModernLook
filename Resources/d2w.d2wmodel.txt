@@ -58,5 +58,6 @@
     100 : look = 'ERModernLook' => templateNameForWizardCreationPage = BootstrapInspectPage [com.webobjects.directtoweb.Assignment],
     110 : *true* => isEntityEditable = false [com.webobjects.directtoweb.BooleanAssignment],
     110 : *true* => isEntityDeletable = false [com.webobjects.directtoweb.BooleanAssignment],
-    200 : (task = list and (propertyKey = 'name' or propertyKey = 'title')) => componentName = ERMD2WInspectLink [com.webobjects.directtoweb.Assignment]
+    110 : (task = 'list' or task = 'editRelationship' or (task = 'inspect' and smartRelationship.isToMany = 0)) => componentName = ERMD2WInspectLink [com.webobjects.directtoweb.Assignment],
+    120 : ((task = 'list' or task = 'inspect') and smartRelationship.isToMany = 0) => componentName = BMLLinkToOne [com.webobjects.directtoweb.Assignment]
 )

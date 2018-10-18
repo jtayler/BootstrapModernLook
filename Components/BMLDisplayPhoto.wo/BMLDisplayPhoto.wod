@@ -1,0 +1,4 @@
+WOImage :WOImage {
+ data="$object.photo.photo";
+ mimeType="image/png";
+}

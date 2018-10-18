@@ -24,6 +24,24 @@ InspectPageRepetition: WOSwitchComponent {
 	object = object;
 }
 
+SmartCreateButton: CCSmartAjaxButton {
+	action = smartCreateAction;
+	alt = "Create new object";
+	value = d2wContext.createButtonLabel;
+	class = d2wContext.baseClassForCreateButton;
+	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
+    updateContainerID = d2wContext.idForParentMainContainer;
+}
+
+SmartEditButton: CCSmartAjaxButton {
+	action = smartEditAction;
+	alt = "Edits this object";
+	value = d2wContext.editButtonLabel;
+	class = d2wContext.baseClassForEditButton;
+	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
+    updateContainerID = d2wContext.idForParentMainContainer;
+}
+
 IsEditingConditional: WOConditional {
 	_unroll = true;
 	condition = isEditing;
@@ -33,6 +51,13 @@ IsNotEditingConditional: WOConditional {
 	_unroll = true;
 	condition = isEditing;
 	negate = true;
+}
+
+IsObjectSmartEditable: WOConditional {
+	condition = d2wContext.isEntitySmartEditable;
+}
+IsObjectSmartCreatable: WOConditional {
+	condition = d2wContext.isEntitySmartCreatable;
 }
 
 IsObjectEditable: WOConditional {
