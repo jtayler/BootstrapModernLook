@@ -1,0 +1,3 @@
+HasObjectConditional : ERXNonNullConditional {
+	condition = objectPropertyValue;
+}

@@ -15,7 +15,7 @@ ToManyTextField: WOTextField {
 	size = 25;
 	value = value;
 	name = d2wContext.name;
-	class="form-control";
+	class = d2wContext.baseClassForFormInput;
 }
 
 InputGroupDiv : WOGenericContainer {

@@ -1,4 +1,6 @@
 (
+    10 : *true* => numberRangeLow = 0 [com.webobjects.directtoweb.Assignment],
+    10 : *true* => numberRangeHigh = 150 [com.webobjects.directtoweb.Assignment],
     10 : *true* => cellTabClass = nav-item [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForInputSpan =  [com.webobjects.directtoweb.Assignment],
     10 : *true* => inputTypeForObject = text [com.webobjects.directtoweb.Assignment],
@@ -29,6 +31,7 @@
     10 : *true* => baseClassForObjectTablePagination = pagination pagination-sm justify-content-center m-2 [com.webobjects.directtoweb.Assignment],
     10 : (propertyKey = 'link' or propertyKey like '*URL' or propertyKey like '*ebsite') => inputTypeForObject = url [com.webobjects.directtoweb.Assignment],
     10 : (propertyKey like '*website*' or propertyKey like '*url*' or propertyKey like '*link*') => baseClassForInputSpan = fa fa-link [com.webobjects.directtoweb.Assignment],
+    10 : (task = 'edit' and (smartAttribute.className = 'java.lang.Number' or smartAttribute.className = 'java.math.BigDecimal')) => componentName = ERD2WEditNumber [com.webobjects.directtoweb.Assignment],
     20 : *true* => objectCardColumnClass = col-sm pb-4 [com.webobjects.directtoweb.Assignment],
     20 : *true* => baseClassForInputGroup = input-group input-group-lg mb-3  [com.webobjects.directtoweb.Assignment],
     20 : (task = 'query' and smartRelationship.isToMany = 1) => componentName = BMLQueryToManyField [com.webobjects.directtoweb.Assignment],

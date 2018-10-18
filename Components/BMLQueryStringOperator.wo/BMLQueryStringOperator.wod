@@ -3,7 +3,7 @@ NumberField: WOTextField {
 	value = value;
 	placeholder = d2wContext.name;
 	name = d2wContext.name;
-	class = "form-control";
+	class = d2wContext.baseClassForFormInput;
 }
 
 OperatorPopUp: WOPopUpButton {

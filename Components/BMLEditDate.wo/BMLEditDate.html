@@ -1,5 +1,12 @@
-<WEBOBJECT NAME=TextField1></WEBOBJECT>
-
+<webobject name="InputGroupDiv">
+   <webobject name="HasPre">
+     <div class="input-group-prepend">
+      <div class="input-group-text">
+        <webobject name="PrependSpan" />
+      </div>
+    </div>
+   </webobject>
+  <WEBOBJECT NAME=TextField1></WEBOBJECT>
 <!-- JavaScript -->
 <script>
   $('#datepicker').datepicker({
@@ -8,3 +15,11 @@
       todayHighlight: true
   });
 </script>
+   <webobject name="HasPost">
+   <div class="input-group-append">
+      <div class="input-group-text">
+        <webobject name="Span" />
+      </div>
+   </div>
+  </webobject>
+</webobject>

@@ -38,7 +38,7 @@ public class BMLCard extends D2WCustomComponent {
 		return linkUrl;
 	}
 
-	public WOActionResults inspectAction() {
+	public WOActionResults inspectObjectAction() {
 		InspectPageInterface ipi = D2W.factory().inspectPageForEntityNamed(object().entityName(), session());
 		ipi.setObject(object());
 		ipi.setNextPage(context().page());

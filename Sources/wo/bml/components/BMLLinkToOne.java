@@ -29,10 +29,10 @@ public class BMLLinkToOne extends ERD2WCustomComponentWithArgs {
 		return (String) obj.valueForKey(key);
 	}
 	
-	public String relationshipValue()  {
+	public Object relationshipValue()  {
 		EOEnterpriseObject obj = (EOEnterpriseObject) objectPropertyValue();
 		String key = d2wContext().keyWhenRelationship();
-		return (String) obj.valueForKey(key);
+		return (Object) obj.valueForKey(key);
 	}
 	
 	public String linkURL() {
@@ -49,7 +49,7 @@ public class BMLLinkToOne extends ERD2WCustomComponentWithArgs {
 		return linkUrl;
 	}
 
-	public WOActionResults inspectAction() {
+	public WOActionResults inspectActionLink() {
 		EOEnterpriseObject obj = (EOEnterpriseObject) objectPropertyValue();
 		InspectPageInterface ipi = D2W.factory().inspectPageForEntityNamed(obj.entityName(), session());
 		ipi.setObject(obj);
