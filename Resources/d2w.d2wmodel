@@ -649,7 +649,7 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
-        "keyPath" = "isEntitySmartFindable"; 
+        "keyPath" = "isEntitySmartCreatable"; 
         "value" = "true"; 
       }; 
     }, 
@@ -658,8 +658,8 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
-        "keyPath" = "isEntitySmartCreatable"; 
-        "value" = "true"; 
+        "keyPath" = "isEntitySmartFindable"; 
+        "value" = "false"; 
       }; 
     }, 
     {
