@@ -57,6 +57,8 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
 
 .PageHeader {
      display: none;
+     //padding:1rem;
+     //font-size:200%;
 }
  .BtmActions {
      margin:0;
