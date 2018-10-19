@@ -1,0 +1,71 @@
+<webobject name = "PageWrapper">
+  <webobject name = "RequiredWrapper">
+<webobject name = "PageClass">
+    <webobject name = "InnerWrapper">
+      <webobject name = "ShowBanner">
+        <webobject name = "BannerDiv"> <webobject name = "BannerComponent" /> </webobject>
+      </webobject>
+      <Div class="alert-secondnary">
+      <webobject name = "ErrorBlock" />
+      </div>
+      <webobject name = "InspectPageRepetition" />
+    </webobject>
+    <webobject name = "BottomActionBlock">
+      <ul class = "ActionList">
+        <webobject name = "ShowCancel">
+          <li>
+              <li>
+				<webobject name = "CancelButton">
+                               
+                </webobject>
+                </li>
+            <webobject name = "ShowCancelDialog">
+<div id = "cancelmodal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Really cancel?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Your changes will be lost.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $('#cancelmodal').trigger('focus')
+</script>
+
+
+            </webobject>
+          </li>
+        </webobject>
+        <webobject name = "ShowPrevious">
+          <li>
+            <webobject name = "PreviousButton">
+              <span><webobject name = "PreviousButtonLabel" /></span>
+            </webobject>
+          </li>
+        </webobject>
+        <webobject name = "ShowNext">
+          <li>
+            <webobject name = "NextButton">
+              <span><webobject name = "NextButtonLabel" /></span>
+            </webobject>
+          </li>
+        </webobject>
+        <webobject name = "ShowSave">
+          <li><webobject name = "SaveButton" /></li>
+        </webobject>
+      </ul>
+    </webobject>
+    </webobject>
+  </webobject>
+</webobject>
