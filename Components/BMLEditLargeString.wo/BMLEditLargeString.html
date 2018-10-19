@@ -1,5 +1,25 @@
 <span id="count_message"></span>
+<webobject name="InputGroupDiv">
+   <webobject name="HasPre">
+     <div class="input-group-prepend">
+      <div class="input-group-text">
+        <webobject name="PrependSpan" />
+      </div>
+    </div>
+   </webobject>
+
 <WEBOBJECT NAME=EditString></WEBOBJECT>
+
+   <webobject name="HasPost">
+   <div class="input-group-append">
+      <div class="input-group-text">
+        <webobject name="Span" />
+      </div>
+   </div>
+  </webobject>
+</webobject>
+
+
 <script>
     $(document).ready(function(){
       var text_max = <wo:str value="$d2wContext.maxLength" />;

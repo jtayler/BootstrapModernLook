@@ -17,6 +17,21 @@ contextComponentActionURL: WOGenericContainer {
 	href = contextComponentActionURL;
 	invokeAction = menuItemSelected;
     class = linkClass;
+    role="button";
+    data-toggle="dropdown";
+}
+contextComponentActionURLItemClass: WOGenericContainer { 
+	elementName = "a";
+	href = contextComponentActionURL;
+	invokeAction = menuItemSelected;
+    class = "dropdown-item";
+}
+
+contextComponentActionURLItemClassNoDrop: WOGenericContainer { 
+	elementName = "a";
+	href = contextComponentActionURL;
+	invokeAction = menuItemSelected;
+    class = "nav-link";
 }
 
 NewMarker: WOImage {

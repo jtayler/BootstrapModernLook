@@ -126,6 +126,15 @@
     {
       "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForInspectButton"; 
+        "value" = "btn btn-secondary"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
         "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
         "key" = "propertyKey"; 
@@ -178,15 +187,6 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForCancelButtonSpan"; 
         "value" = "fa fa-sign-in mr-4 mb-4"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForInspectButton"; 
-        "value" = "btn btn-secondary mr-4 mb-4"; 
       }; 
     }, 
     {
@@ -929,7 +929,42 @@
       }; 
     }, 
     {
-      "author" = "46"; 
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "emptyListMessage"; 
+        "value" = "None Found"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "propertyKey"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "password"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "edit"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "componentName"; 
+        "value" = "BMLEditPassword"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
         "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
@@ -970,41 +1005,6 @@
       }; 
     }, 
     {
-      "author" = "60"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "emptyListMessage"; 
-        "value" = "None Found"; 
-      }; 
-    }, 
-    {
-      "author" = "60"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "lhs" = {
-        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
-        "qualifiers" = (
-          {
-            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-            "key" = "propertyKey"; 
-            "selectorName" = "isEqualTo"; 
-            "value" = "password"; 
-          }, 
-          {
-            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-            "key" = "task"; 
-            "selectorName" = "isEqualTo"; 
-            "value" = "edit"; 
-          }
-        ); 
-      }; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "componentName"; 
-        "value" = "BMLEditPassword"; 
-      }; 
-    }, 
-    {
       "author" = "64"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
@@ -1031,6 +1031,41 @@
       }; 
     }, 
     {
+      "author" = "80"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "edit"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "smartAttribute.className"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "java.lang.String"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "smartAttribute.width"; 
+            "selectorName" = "isGreaterThanOrEqualTo"; 
+            "value" = {
+              "class" = "java.lang.Number"; 
+              "value" = "110"; 
+            }; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "componentName"; 
+        "value" = "BMLEditLargeString"; 
+      }; 
+    }, 
+    {
       "author" = "100"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
@@ -1043,10 +1078,21 @@
       "author" = "100"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
-        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-        "key" = "look"; 
-        "selectorName" = "isEqualTo"; 
-        "value" = "ERModernLook"; 
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "RuleIsDisabled"; 
+            "selectorName" = "isEqual"; 
+            "value" = "YES"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "look"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "ERModernLook"; 
+          }
+        ); 
       }; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 

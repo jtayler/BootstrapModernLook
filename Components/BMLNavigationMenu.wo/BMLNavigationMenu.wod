@@ -6,9 +6,23 @@ NavItems: WORepetition {
 NavObject: BMLNavigationMenuItem {
 	navigationItem = aNavigationItem;
     level=1;
-    items = level2Items;
+}
+Nav2Object: BMLNavigationMenuItem {
+	navigationItem = a2NavigationItem;
+    level=2;
+}
+Nav2Object2: BMLNavigationMenuItem {
+	navigationItem = aNavigationItem;
+    level=3;
 }
 level2Items: WORepetition {
-	item = aNavigationItem;
-	list = level2Items;
+	item = a2NavigationItem;
+	list = itemsForLevel2;
+}
+HasItemsForLevel2 : ERXNonNullConditional {
+	condition = itemsForLevel2;
+	negate = true;
+}
+HasNoItemsForLevel2 : ERXNonNullConditional {
+	condition = itemsForLevel2;
 }
