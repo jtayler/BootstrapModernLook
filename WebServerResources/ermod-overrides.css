@@ -17,7 +17,7 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
  }
 .CreateWrapper .card, .EditWrapper .card, .Section .card,.QueryWrapper .card {
      width:80%;
-     max-width: 580px;
+     max-width: 680px;
      margin: 3rem auto 3rem;
 }
 .QueryAllWrapper .card {

@@ -29,9 +29,19 @@ public class BootstrapInspectPage extends ERMODInspectPage implements NextPageDe
         super(context);
     }
 	
+	public void checkNextPage() {
+		WOComponent page = context().page();
+		 if (page instanceof QueryPageInterface) {
+			 // we don't put query pages on the stack
+			 // they are boring to cancel back to.
+			 //
+		 } else {
+			nextPage = context().page();
+		 }
+	}
 	public WOActionResults smartEditAction() {
-		nextPage = context().page();
-		 EditPageInterface nextPage = D2W.factory().editPageForEntityNamed(d2wContext().entity().name(), session());
+		checkNextPage();
+		EditPageInterface nextPage = D2W.factory().editPageForEntityNamed(d2wContext().entity().name(), session());
 		 ERXGenericRecord object = (ERXGenericRecord) object();
 		 nextPage.setObject(object);
 		 nextPage.setNextPageDelegate(this);
@@ -39,7 +49,7 @@ public class BootstrapInspectPage extends ERMODInspectPage implements NextPageDe
 	}
 	
 	public WOActionResults smartFindAction() {
-		nextPage = this;
+		checkNextPage();
 		 QueryPageInterface nextPage = D2W.factory().queryPageForEntityNamed(d2wContext().entity().name(), session());
 		 //nextPage.setNextPageDelegate(this);
 		return (WOActionResults) nextPage;
@@ -54,7 +64,7 @@ public class BootstrapInspectPage extends ERMODInspectPage implements NextPageDe
 	
 	
 	public WOActionResults smartCreateAction() {
-		nextPage = context().page();
+		checkNextPage();
 		 EditPageInterface nextPage = D2W.factory().editPageForNewObjectWithEntityNamed(d2wContext().entity().name(), session());
 		 //nextPage.setNextPage(context().page());
 		 nextPage.setNextPageDelegate(this);

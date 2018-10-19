@@ -161,6 +161,15 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForNextButton"; 
+        "value" = "btn btn-primary mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForSaveButton"; 
         "value" = "btn btn-primary mr-4 mb-4"; 
       }; 
@@ -237,21 +246,6 @@
     {
       "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
-      "lhs" = {
-        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-        "key" = "task"; 
-        "selectorName" = "isEqualTo"; 
-        "value" = "query"; 
-      }; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForFindButton"; 
-        "value" = "btn btn-primary mr-4 mb-4"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForCancelButton"; 
@@ -265,6 +259,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForNavBar"; 
         "value" = "navbar navbar-expand-lg navbar-dark bg-dark"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForPreviousButton"; 
+        "value" = "btn btn-outline-secondary mr-4 mb-4"; 
       }; 
     }, 
     {
@@ -470,6 +473,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForInputGroup"; 
         "value" = "input-group input-group-lg mb-3 "; 
+      }; 
+    }, 
+    {
+      "author" = "20"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "classForErrorBlock"; 
+        "value" = "alert alert-danger alert-dismissible fade show"; 
       }; 
     }, 
     {
@@ -783,8 +795,38 @@
       }; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "wizardBannerComponentName"; 
+        "value" = "BMLWizardDetailedBanner"; 
+      }; 
+    }, 
+    {
+      "author" = "40"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "look"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "ERModernLook"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "batchNavigationBarComponentName"; 
         "value" = "BMLBatchNavigationBar"; 
+      }; 
+    }, 
+    {
+      "author" = "40"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "look"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "ERModernLook"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "templateNameForWizardCreationPage"; 
+        "value" = "BMLWizardCreationPage"; 
       }; 
     }, 
     {
@@ -1081,32 +1123,6 @@
         "class" = "com.webobjects.directtoweb.BooleanAssignment"; 
         "keyPath" = "isEntityInspectable"; 
         "value" = "false"; 
-      }; 
-    }, 
-    {
-      "author" = "100"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "lhs" = {
-        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
-        "qualifiers" = (
-          {
-            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-            "key" = "RuleIsDisabled"; 
-            "selectorName" = "isEqual"; 
-            "value" = "YES"; 
-          }, 
-          {
-            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-            "key" = "look"; 
-            "selectorName" = "isEqualTo"; 
-            "value" = "ERModernLook"; 
-          }
-        ); 
-      }; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "templateNameForWizardCreationPage"; 
-        "value" = "BootstrapInspectPage"; 
       }; 
     }, 
     {
