@@ -39,6 +39,7 @@
     20 : *true* => objectCardColumnClass = col-sm pb-4 [com.webobjects.directtoweb.Assignment],
     20 : task = 'list' => shouldShowDefaultPageButtons = false [com.webobjects.directtoweb.BooleanAssignment],
     20 : *true* => baseClassForInputGroup = input-group input-group-lg mb-3  [com.webobjects.directtoweb.Assignment],
+    20 : pageConfiguration like '*Create*' => saveButtonLabel = Create [er.directtoweb.ERDDelayedLocalizedAssignment],
     20 : *true* => classForErrorBlock = alert alert-danger alert-dismissible fade show [com.webobjects.directtoweb.Assignment],
     20 : (task = 'query' and smartRelationship.isToMany = 1) => componentName = BMLQueryToManyField [com.webobjects.directtoweb.Assignment],
     20 : (task = 'query' and smartAttribute.className = 'java.lang.String') => componentName = BMLQueryStringOperator [com.webobjects.directtoweb.Assignment],

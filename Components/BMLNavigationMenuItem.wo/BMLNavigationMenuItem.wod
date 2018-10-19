@@ -17,7 +17,7 @@ ActionURLItemClassNoDrop: WOGenericContainer {
 	elementName = "a";
 	href = contextComponentActionURL;
 	invokeAction = menuItemSelected;
-    class = "nav-link";
+    class = linkNoDropClass;
 }
 
 DisplayName: WOString {
