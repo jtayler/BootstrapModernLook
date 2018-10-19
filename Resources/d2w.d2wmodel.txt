@@ -25,6 +25,7 @@
     10 : *true* => baseClassForEditButton = btn btn-outline-primary mr-4 mb-4 [com.webobjects.directtoweb.Assignment],
     10 : task = 'query' => baseClassForFindButton = btn btn-primary mr-4 mb-4 [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForCancelButton = btn btn-outline-secondary mr-4 mb-4 [com.webobjects.directtoweb.Assignment],
+    10 : *true* => baseClassForNavBar = navbar navbar-expand-lg navbar-dark bg-dark [com.webobjects.directtoweb.Assignment],
     10 : (task = 'inspect' or task = 'list') => pageContainerClass = jumbotron-fluid [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForQueryButton = btn btn-pill btn-sm btn-outline-primary m-1 [com.webobjects.directtoweb.Assignment],
     10 : *true* => attachmentEditorEditButtonClass = btn btn-sm btn-pill btn-outline-primary m-2 [com.webobjects.directtoweb.Assignment],

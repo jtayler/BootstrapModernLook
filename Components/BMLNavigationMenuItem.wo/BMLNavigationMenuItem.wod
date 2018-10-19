@@ -1,18 +1,4 @@
-hasActivityAndIsEnabled: WOConditional {
-	condition = hasActivityAndIsEnabled;
-}
-
-level2Items: WORepetition {
-	item = d2wContext.aNavigationItem;
-	list = items;
-}
-
-hasNoActivityAndIsEnabled: WOConditional {
-	condition = hasActivityAndIsEnabled;
-	negate = true;
-}
-
-contextComponentActionURL: WOGenericContainer { 
+ActionURL: WOGenericContainer { 
 	elementName = "a";
 	href = contextComponentActionURL;
 	invokeAction = menuItemSelected;
@@ -20,62 +6,21 @@ contextComponentActionURL: WOGenericContainer {
     role="button";
     data-toggle="dropdown";
 }
-contextComponentActionURLItemClass: WOGenericContainer { 
+ActionURLItemClass: WOGenericContainer { 
 	elementName = "a";
 	href = contextComponentActionURL;
 	invokeAction = menuItemSelected;
     class = "dropdown-item";
 }
 
-contextComponentActionURLItemClassNoDrop: WOGenericContainer { 
+ActionURLItemClassNoDrop: WOGenericContainer { 
 	elementName = "a";
 	href = contextComponentActionURL;
 	invokeAction = menuItemSelected;
     class = "nav-link";
 }
 
-NewMarker: WOImage {
-	filename = "NewMarker.gif";
-	framework = "ERExtensions";
-}
-
-displayName: WOString {
+DisplayName: WOString {
 	value = displayName;
     escapeHTML=false;
-}
-
-Td: WOGenericContainer { 
-    elementName = "td";
-    width = navigationItemWidth;
-    class = linkClass;
-    id = navigationItemID;
-    nowrap="nowrap";
-}
-
-li: WOGenericContainer { 
-    elementName = "li";
-    width = navigationItemWidth;
-    class = linkClass;
-    id = navigationItemID;
-    nowrap="nowrap";
-}
-
-
-MeetsDisplayConditions:WOConditional {
-condition=meetsDisplayConditions;
-}
-
-
-UsingTablesConditional:WOConditional {
-	condition=false;
-}
-
-
-NotUsingTablesConditional:WOConditional {
-condition=true;
-}
-
-Span1 : WOGenericContainer {
-  elementName = "span";
-  omitTags = omitLabelSpanTag;
 }

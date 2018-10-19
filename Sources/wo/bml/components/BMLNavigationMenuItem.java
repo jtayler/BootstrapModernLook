@@ -12,6 +12,8 @@ public class BMLNavigationMenuItem extends ERXNavigationMenuItem {
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	public boolean isSelectedState = true;
+	
 	public BMLNavigationMenuItem(WOContext context) {
         super(context);
     }
@@ -21,22 +23,18 @@ public class BMLNavigationMenuItem extends ERXNavigationMenuItem {
             return "";
         }
         BMLNavigationMenu parent = (BMLNavigationMenu) parent();
-        boolean isSelected = isSelected();
+        boolean isSelected = parent.isSelectedState(this.navigationItem());
         boolean isDisabled = isDisabled();
         boolean show = parent.showLevel2();
         String linkstring = "";
         if (show) {
-            linkstring = "nav-link nav-link" + level() + (isSelected ? " active" : (isDisabled ? " disabled" : "")) + (items().count() == 0 ? "" : " dropdown-toggle");
+            linkstring = "dropdown-toggle nav-link nav-link-" + level() + (isSelected ? " active" : (isDisabled ? " disabled" : ""));
         } else {
-            linkstring = "nav-link nav-link" + level() + (isSelected ? " active" : (isDisabled ? " disabled" : ""));
+            linkstring = "nav-link nav-link-" + level() + (isSelected ? " active" : (isDisabled ? " disabled" : ""));
         }
         return linkstring;
     }
 
-    public NSArray<?> items() {
-    	NSArray<?> items = ((BMLNavigationMenu) parent()).level2Items();
-        return items;
-    }
 
 	
 }

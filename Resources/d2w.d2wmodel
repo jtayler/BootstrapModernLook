@@ -261,6 +261,15 @@
     {
       "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForNavBar"; 
+        "value" = "navbar navbar-expand-lg navbar-dark bg-dark"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
         "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
         "qualifiers" = (

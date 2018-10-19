@@ -6,23 +6,20 @@ NavItems: WORepetition {
 NavObject: BMLNavigationMenuItem {
 	navigationItem = aNavigationItem;
     level=1;
+    isSelectedState = true;
 }
 Nav2Object: BMLNavigationMenuItem {
 	navigationItem = a2NavigationItem;
     level=2;
+    isSelectedState = false;
 }
 Nav2Object2: BMLNavigationMenuItem {
 	navigationItem = aNavigationItem;
     level=3;
+    isSelectedState = false;
 }
 level2Items: WORepetition {
 	item = a2NavigationItem;
 	list = itemsForLevel2;
 }
-HasItemsForLevel2 : ERXNonNullConditional {
-	condition = itemsForLevel2;
-	negate = true;
-}
-HasNoItemsForLevel2 : ERXNonNullConditional {
-	condition = itemsForLevel2;
-}
+

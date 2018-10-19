@@ -1,14 +1,14 @@
 <webobject name=NavItems>
-<wo:ERXEqualConditional value1 = "$itemsForLevel2.count" value2 = 0>
+   <wo:ERXEqualConditional value1 = "$itemsForLevel2.count" value2 = 0>
       <li class="nav-item">
-    	<webobject name=Nav2Object2></webobject>
+         <webobject name=Nav2Object2></webobject>
       </li>
-</wo:ERXEqualConditional>
-<wo:ERXEqualConditional negate = true value1 = "$itemsForLevel2.count" value2 = 0>
-    <webobject name=NavObject>
-    <webobject name=level2Items>
-    <webobject name=Nav2Object></webobject>
-    </webobject>
-    </webobject>
-</wo:ERXEqualConditional>
+   </wo:ERXEqualConditional>
+   <wo:ERXEqualConditional negate = true value1 = "$itemsForLevel2.count" value2 = 0>
+      <webobject name=NavObject>
+         <webobject name=level2Items>
+            <webobject name=Nav2Object></webobject>
+         </webobject>
+      </webobject>
+   </wo:ERXEqualConditional>
 </webobject>
