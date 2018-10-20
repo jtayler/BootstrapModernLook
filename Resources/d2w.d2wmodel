@@ -50,15 +50,6 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "pageContainerClass"; 
-        "value" = "card"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "cardComponentName"; 
         "value" = "BMLCard"; 
       }; 
@@ -112,6 +103,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForRadioButton"; 
         "value" = "btn btn-light"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "pageContainerClass"; 
+        "value" = "page-contents card"; 
       }; 
     }, 
     {
@@ -221,15 +221,6 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForCreateButton"; 
-        "value" = "btn btn-outline-info mr-4 mb-4"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForObjectTable"; 
         "value" = "table table-borderless table-sm"; 
       }; 
@@ -239,8 +230,17 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForEditButton"; 
+        "keyPath" = "baseClassForCreateButton"; 
         "value" = "btn btn-outline-primary mr-4 mb-4"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForEditButton"; 
+        "value" = "btn btn-outline-secondary mr-4 mb-4"; 
       }; 
     }, 
     {
@@ -273,6 +273,24 @@
     {
       "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForQueryButton"; 
+        "value" = "btn btn-pill btn-sm btn-outline-primary m-1"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "attachmentEditorEditButtonClass"; 
+        "value" = "btn btn-sm btn-pill btn-outline-primary m-2"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
         "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
         "qualifiers" = (
@@ -293,25 +311,7 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "pageContainerClass"; 
-        "value" = "jumbotron-fluid"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForQueryButton"; 
-        "value" = "btn btn-pill btn-sm btn-outline-primary m-1"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "attachmentEditorEditButtonClass"; 
-        "value" = "btn btn-sm btn-pill btn-outline-primary m-2"; 
+        "value" = "page-contents jumbotron-fluid"; 
       }; 
     }, 
     {

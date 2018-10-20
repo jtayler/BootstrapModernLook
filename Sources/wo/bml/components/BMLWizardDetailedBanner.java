@@ -17,7 +17,7 @@ public class BMLWizardDetailedBanner extends ERMDWizardDetailedBanner {
 	public String listItemClass() {
 		String result = "";
 		if (tabItem != null && tabItem.equals(currentTab())) {
-			result = "nav-item ";
+			result = "nav-item active ";
 		} 
 		if (index == tabSectionsContents().count() - 1) {
 			result = "nav-item last-item " + result;
