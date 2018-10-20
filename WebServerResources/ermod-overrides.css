@@ -1,35 +1,63 @@
+ /* override modern look */
+
 body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton, .Button, input, textarea, strong, nav, H1, H2, H3, H4, H5, .Line label, .Line .Label, .TPTab span {
      text-rendering:optimizeLegibility;
      -webkit-font-smoothing: antialiased;
 }
- .QueryAllWrapper .card {
- 	padding:1rem;
- }
 
- .InspectTabWrapper .card, .InspectWrapper .card {
-     width:80%;
-     max-width: 100%;
-     margin: 3rem auto 3rem;
- }
- 
-.CreateWrapper .page-contents, .EditWrapper .page-contents, .Section .page-contents,.QueryWrapper .card {
-     width:80%;
-     max-width: 680px;
-     margin: 3rem auto 3rem;
+/*
+
+.Banner {
+	padding: 0;
+	color: none;
+	font-weight: normal;
+	font-size: normal;
+	margin: 0;
 }
-.QueryAllWrapper .card {
-     width:90%;
-     max-width: 1100px;
-     margin: 2rem auto 2rem;
+
+.CreateBanner ul {
+	background-color: #e0e3ea;
+	overflow: hidden;
+	margin: 0px;
+	width: auto;
 }
- .CreateBanner li.active   {
-     font-weight: 800;
-     transition: all 300ms ease 0s;
-	}
- H2, H3 {
-     font-weight: 300;
-     font-size:150%;
+
+.CreateBanner li {
+	float: none;
+	padding: 0;
+	color: clear;
+	margin-left: 0;
+	background: none;
+	line-height: normal;
 }
+
+.CreateBanner li .BannerItem {
+	display: block;
+	line-height: normal;
+	padding-right: 0;
+}
+
+.CreateBanner li.First {
+	padding: 0;
+	background-image: none;
+	background-color: clear;
+}
+
+.CreateBanner li.Last .BannerItem {
+	background: none;
+}
+
+.CreateBanner .BannerStepNumber {
+	font-weight: normal;
+	padding: 0;
+}
+
+.CreateBanner li.CurrentStep {
+	color: clear;
+	background: none;
+}
+
+*/
 
  .QueryAttrVal {
 	display:inline;
@@ -45,7 +73,6 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      background-image: none;
      background-color: transparent;
 }
-
 .PageHeader {
      display: none;
 }
@@ -97,10 +124,6 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      list-style: none;
      display:inline;
 }
- TH {
-     text-align: left;
-     font-weight: bold;
-}
  .ERMDEmptyList {
      background:none;
      border:none;
@@ -145,25 +168,71 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      color: #aaaaaa;
      font-weight: 100;
 }
+ /* end modern look overrides */
 
 
 
 
+ /* a few app level defaults modern look */
+ .QueryAllWrapper .card {
+ 	padding:1rem;
+ }
+
+ .CreateWrapper .page-contents, .EditWrapper .page-contents, .Section .page-contents,.QueryWrapper .card {
+     width:80%;
+     max-width: 680px;
+     margin: 3rem auto 3rem;
+}
+ .QueryAllWrapper .card {
+     width:100%;
+     max-width: 1100px;
+     margin: 2rem auto 2rem;
+}
+ .CreateBanner li.active   {
+     font-weight: 800;
+     transition: all 300ms ease 0s;
+}
+ H2, H3 {
+     font-weight: 300;
+     font-size:150%;
+}
+
+
+.ERXJSFlyOver,.ChangesMarker,.ERDPrinterButton {
+     display: none;
+}
+
+.EmbeddedListWrapper .card-body,.Embeddedcard-body  {
+	padding:0.5rem;
+}
+
+ /* This rule removes the corner border in fullscreen inspect tab cards */
+ .InspectWrapper .page-contents .card-header:first-child { 
+	border-radius:0;
+}
+
+
+
+ /* validation */
  input[type=url]:invalid {
      border-color: #C33;
      box-shadow: inset 0 0.0625em 0.125em rgba(0,0,0,.2), 0 0 0.125em rgba(203,0,2,.8);
 }
 
+ /* just prefer no underlines... */
  a:hover {
-     text-decoration:none;
+     text-decoration:none !important;
      transition: all 300ms ease 0s;
 }
 
-
+ /* This rule gives the main container style some marins */
  .container-fluid {
      margin-top:0.5rem;
      padding-top:0.5rem;
 }
+
+
+ /* This rule removes the margins on the on/off control for editing booleans and should be done another way */
  .custom-control {
      padding:0;
      margin:0;
@@ -175,11 +244,9 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
 
 
 
-
-
-
+ /* last sizing padding and clipping of wrappers for small screens */
  @media screen and (max-width: 768px) {
-     .CreateWrapper .page-contents,.QueryWrapper .card ,.EditWrapper .page-contents ,.Section .page-contents,.Wrapper .page-contents {
+     .CreateWrapper .page-contents,.QueryAllWrapper .card, .QueryWrapper .card ,.EditWrapper .page-contents ,.Section .page-contents,.Wrapper .page-contents {
          margin: 0 auto 0;
          width:100%;
          max-width: 100%;
