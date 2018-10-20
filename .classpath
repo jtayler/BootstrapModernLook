@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="Sources"/>
-	<classpathentry kind="con" path="WOFramework/ERExtensions"/>
-	<classpathentry kind="con" path="WOFramework/ERJars"/>
-	<classpathentry kind="con" path="WOFramework/ERPrototypes"/>
-	<classpathentry kind="con" path="WOFramework/ERAttributeExtension"/>
-	<classpathentry kind="con" path="WOFramework/JavaWOExtensions"/>
-	<classpathentry kind="con" path="WOFramework/WOOgnl"/>
-	<classpathentry kind="con" path="WOFramework/JavaEOAccess"/>
-	<classpathentry kind="con" path="WOFramework/JavaEOControl"/>
-	<classpathentry kind="con" path="WOFramework/JavaFoundation"/>
-	<classpathentry kind="con" path="WOFramework/JavaJDBCAdaptor"/>
-	<classpathentry kind="con" path="WOFramework/JavaWebObjects"/>
-	<classpathentry kind="con" path="WOFramework/JavaXML"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Java SE 7 [1.7.0_80]"/>
-	<classpathentry kind="con" path="WOFramework/ERModernLook"/>
-	<classpathentry kind="con" path="WOFramework/ERModernDirectToWeb"/>
-	<classpathentry kind="con" path="WOFramework/JavaEOApplication"/>
-	<classpathentry kind="con" path="WOFramework/ERDirectToWeb"/>
-	<classpathentry kind="con" path="WOFramework/JavaDirectToWeb"/>
-	<classpathentry kind="con" path="WOFramework/JavaEOInterface"/>
-	<classpathentry kind="con" path="WOFramework/ERModernDefaultSkin"/>
-	<classpathentry kind="con" path="WOFramework/ERRest"/>
-	<classpathentry kind="con" path="WOFramework/JavaEOInterfaceCocoa"/>
-	<classpathentry kind="con" path="WOFramework/JavaDTWGeneration"/>
-	<classpathentry kind="con" path="WOFramework/ERAttachment"/>
-	<classpathentry kind="con" path="WOFramework/JavaEOGeneration"/>
-	<classpathentry kind="con" path="WOFramework/Ajax"/>
-	<classpathentry kind="con" path="WOFramework/ERCoreBusinessLogic"/>
-	<classpathentry kind="con" path="WOFramework/ERCoolComponents"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERExtensions"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERJars"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERPrototypes"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERAttributeExtension"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaWOExtensions"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/WOOgnl"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaEOAccess"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaEOControl"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaFoundation"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaJDBCAdaptor"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaWebObjects"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaXML"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Java SE 7 [1.7.0_80]"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERModernLook"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERModernDirectToWeb"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaEOApplication"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERDirectToWeb"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaDirectToWeb"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaEOInterface"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERModernDefaultSkin"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERRest"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaEOInterfaceCocoa"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaDTWGeneration"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERAttachment"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/JavaEOGeneration"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/Ajax"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERCoreBusinessLogic"/>
+	<classpathentry exported="true" kind="con" path="WOFramework/ERCoolComponents"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

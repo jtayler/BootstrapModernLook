@@ -1,9 +1,19 @@
 CardLinkTitled: WOHyperlink {
 	escapeHTML=false;
-	string = cardLinkTitle;
+	//string = cardLinkTitle;
+	href = linkURL;
+	//action = inspectObjectAction;
+	class = d2wContext.baseClassForInspectButton;
+}
+CardActionTitled: WOHyperlink {
+	escapeHTML=false;
+	//string = cardLinkTitle;
 	//href = linkURL;
 	action = inspectObjectAction;
 	class = d2wContext.baseClassForInspectButton;
+}
+CardLinkTitle: WOString {
+	value = cardLinkTitle;
 }
 CardLink: WOHyperlink {
 	action = inspectObjectAction;
@@ -24,11 +34,14 @@ HasCardImageTop : ERXNonNullConditional {
 	condition = cardImageSrc;
 }
 HasCardFooter : ERXNonNullConditional {
-	condition = cardFooterText;
+	condition = inspectAction;
 }
 HasTextConditional : ERXNonNullConditional {
 	condition = cardText;
 }
 HasLinkConditional : ERXNonNullConditional {
 	condition = cardLinkTitle;
+}
+HasActionConditional : ERXNonNullConditional {
+	condition = d2wContext.inspectAction;
 }

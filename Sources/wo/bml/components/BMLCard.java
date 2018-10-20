@@ -49,6 +49,10 @@ public class BMLCard extends D2WCustomComponent {
 		return valueForD2WKey("card-img-top");
 	}
 
+	public String inspectAction() {
+		return valueForD2WKey("inspectObjectAction");
+	}
+
 	public String cardFooterText() {
 		return valueForD2WKey("card-footer");
 	}
