@@ -146,6 +146,24 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      font-weight: 100;
 }
 
+
+
+
+ input[type=url]:invalid {
+     border-color: #C33;
+     box-shadow: inset 0 0.0625em 0.125em rgba(0,0,0,.2), 0 0 0.125em rgba(203,0,2,.8);
+}
+
+ a:hover {
+     text-decoration:none;
+     transition: all 300ms ease 0s;
+}
+
+
+ .container-fluid {
+     margin-top:0.5rem;
+     padding-top:0.5rem;
+}
  .custom-control {
      padding:0;
      margin:0;
@@ -153,20 +171,15 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      padding-bottom:1.5rem;
      padding-left:.25rem;
 }
- a:hover {
-     text-decoration:none;
-     transition: all 300ms ease 0s;
-}
- input[type=url]:invalid {
-     border-color: #C33;
-     box-shadow: inset 0 0.0625em 0.125em rgba(0,0,0,.2), 0 0 0.125em rgba(203,0,2,.8);
-}
- .container-fluid {
-     margin-top:0.5rem;
-     padding-top:0.5rem;
-}
+
+
+
+
+
+
+
  @media screen and (max-width: 768px) {
-     .CreateWrapper .page-contents ,.EditWrapper .page-contents ,.Section .page-contents,.Wrapper .page-contents {
+     .CreateWrapper .page-contents,.QueryWrapper .card ,.EditWrapper .page-contents ,.Section .page-contents,.Wrapper .page-contents {
          margin: 0 auto 0;
          width:100%;
          max-width: 100%;
