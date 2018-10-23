@@ -31,13 +31,25 @@ public class BMLNavigationMenu extends ERXNavigationMenu {
 	}
 	
 	public NSArray<?> itemsForLevel2() {
+        NSArray<?> items = itemsForLevelAt(2);
+
+		return items;
+	}
+
+	public NSArray<?> itemsForLevel3() {
+        NSArray<?> items = itemsForLevelAt(3);
+
+		return items;
+	}
+
+	public NSArray<?> itemsForLevelAt(Integer level) {
 		String name = aNavigationItem.name();
 		NSArray<?> navigationState = NSArray.componentsSeparatedByString(name, ".");
 		
 		sessionNavigationState();
 		
         navigationState().setState(navigationState);                    
-        NSArray<?> items = itemsForLevel(2);
+        NSArray<?> items = itemsForLevel(level);
 
 		return items;
 	}

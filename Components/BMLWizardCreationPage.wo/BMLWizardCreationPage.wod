@@ -140,7 +140,7 @@ D2wContextInlineCancelMessage : WOString {
 }
 
 ShowBanner: WOConditional {
-	condition = d2wContext.showBanner;
+	condition = showBanner;
 }
 
 ShowCancelDialog : WOConditional {

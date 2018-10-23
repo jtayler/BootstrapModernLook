@@ -22,4 +22,8 @@ level2Items: WORepetition {
 	item = a2NavigationItem;
 	list = itemsForLevel2;
 }
+level3Items: WORepetition {
+	item = a2NavigationItem;
+	list = itemsForLevel3;
+}
 

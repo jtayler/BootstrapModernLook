@@ -1,7 +1,9 @@
 package wo.bml.components;
 
+import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
 
+import er.extensions.foundation.ERXValueUtilities;
 import er.modern.directtoweb.components.ERMDWizardDetailedBanner;
 
 public class BMLWizardDetailedBanner extends ERMDWizardDetailedBanner {
@@ -14,6 +16,16 @@ public class BMLWizardDetailedBanner extends ERMDWizardDetailedBanner {
         super(context);
     }
 	
+    public boolean dontSubmitForm() {
+    	return !ERXValueUtilities.booleanValue(valueForBinding("useFormSubmit"));
+    }
+
+    public WOComponent switchSubmitTab() {
+        Integer selectedIndex = 1;
+
+        return ((BMLWizardCreationPage) parent()).previousStep();
+    }
+
 	public String listItemClass() {
 		String result = "";
 		if (tabItem != null && tabItem.equals(currentTab())) {
@@ -29,17 +41,19 @@ public class BMLWizardDetailedBanner extends ERMDWizardDetailedBanner {
 	}
 	
 	public String listLinkClass() {
-		String result = "";
+		String result = "nav-link";
 		if (tabItem != null && tabItem.equals(currentTab())) {
-			result = "nav-link active ";
-		} 
+			result = result + " active ";
+		} else {
+			result = result + " disabled ";
+		}
 		if (index == tabSectionsContents().count() - 1) {
-			result = "nav-link last-item " + result;
+			result = result + " last-item";
 		}
 		if (index == 0) {
-			result = "nav-link first-item " + result;
+			result = result + " first-item";
 		}
-		return result.equals("") ? null : result;
+		return result;
 	}
 
 }

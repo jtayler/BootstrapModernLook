@@ -1,8 +1,52 @@
-TabSectionsContents : WORepetition {
+TabRepetition : WORepetition {
   list = tabSectionsContents;
   item = tabItem;
   index = index;
 }
+
+HasTabs: WOConditional {
+	condition=tabSectionsContents.count;
+}
+
+HasNoTabs: WOConditional {
+	condition=tabSectionsContents.count;
+	negate = true;
+}
+
+SubmitForm : WOConditional {
+  condition = dontSubmitForm;
+  negate = true;
+}
+
+DontSubmitForm : WOConditional {
+  condition = dontSubmitForm;
+}
+
+AjaxUpdateContainer : AjaxUpdateContainer {
+  id = ^id;
+}
+
+AjaxSubmit: AjaxSubmitButton {
+	updateContainerID = ^d2wContext.idForMainContainer;
+    action = ^previousStep;
+    alt = "Previous step";
+	button =  false;
+	class = ^d2wContext.baseClassForPreviousButton;
+}
+
+_older_AjaxSubmit : AjaxSubmitButton {
+	button = false;
+	action = switchSubmitTab;
+	updateContainerID = ^id;
+	class = listLinkClass;
+}
+
+AjaxLink : AjaxUpdateLink {
+	action = switchSubmitTab;
+	updateContainerID = ^id;
+	class = listLinkClass;
+}
+
 
 TabItemDisplayName : WOString {
   value = tabItem.displayName;
@@ -16,4 +60,9 @@ CurrentStep : WOString {
 Li1 : WOGenericContainer {
   elementName = "li";
   class = listItemClass;
+}
+Link : WOGenericContainer {
+  href="#";
+  elementName = "a";
+  class = listLinkClass;
 }

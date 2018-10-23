@@ -36,13 +36,8 @@ public class BMLNavigationMenuItem extends ERXNavigationMenuItem {
         BMLNavigationMenu parent = (BMLNavigationMenu) parent();
         boolean isSelected = parent.isSelectedState(this.navigationItem());
         boolean isDisabled = isDisabled();
-        boolean show = parent.showLevel2();
-        String linkstring = "";
-        if (show) {
-            linkstring = "nav-link nav-link-" + level() + (isSelected ? " active" : (isDisabled ? " disabled" : ""));
-        } else {
-            linkstring = "nav-link nav-link-" + level() + (isSelected ? " active" : (isDisabled ? " disabled" : ""));
-        }
+        
+        String linkstring = "nav-link nav-link-" + level() + (isSelected ? " active" : (isDisabled ? " disabled" : ""));
         return linkstring;
     }
 

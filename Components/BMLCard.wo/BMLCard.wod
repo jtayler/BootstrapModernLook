@@ -1,8 +1,8 @@
 CardLinkTitled: WOHyperlink {
 	escapeHTML=false;
 	//string = cardLinkTitle;
-	href = linkURL;
-	//action = inspectObjectAction;
+	//href = linkURL;
+	action = inspectObjectAction;
 	class = d2wContext.baseClassForInspectButton;
 }
 CardActionTitled: WOHyperlink {
@@ -16,13 +16,22 @@ CardLinkTitle: WOString {
 	value = cardLinkTitle;
 }
 CardLink: WOHyperlink {
-	action = inspectObjectAction;
+	//action = inspectRelatedObjectAction;
+	href = linkURL;
+}
+CardAction: WOHyperlink {
+	action = inspectRelatedObjectAction;
+	//href = linkURL;
+}
+IsPublic : WOConditional {
+	condition = isPublicPage;
+}
+IsNotPublic : WOConditional {
+	negate = true;
+	condition = isPublicPage;
 }
 HasCardLinkString : ERXNonNullConditional {
 	condition = cardLinkString;
-}
-CardLinkString: WOHyperlink {
-	href = cardLinkString;
 }
 HasHeaderConditional : ERXNonNullConditional {
 	condition = cardHeader;

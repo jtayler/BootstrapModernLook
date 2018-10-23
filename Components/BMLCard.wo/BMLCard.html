@@ -4,6 +4,8 @@
          <wo:str value="$cardHeader" />
       </div>
    </webobject>
+   
+   <webobject name ="IsPublic">
    <webobject name ="HasCardImageTop">
       <webobject name ="CardLink">
          <img class="card-img-top" src=<wo:str value="$cardImageSrc" /> >
@@ -13,6 +15,19 @@
       <webobject name ="CardLink">
          <img class="card-img-top" src=<wo:str value="$cardLinkString" /> >
       </webobject>
+   </webobject>
+   </webobject>
+   <webobject name ="IsNotPublic">
+   <webobject name ="HasCardImageTop">
+      <webobject name ="CardAction">
+         <img class="card-img-top" src=<wo:str value="$cardImageSrc" /> >
+      </webobject>
+   </webobject>
+   <webobject name ="HasCardLinkString">
+      <webobject name ="CardAction">
+         <img class="card-img-top" src=<wo:str value="$cardLinkString" /> >
+      </webobject>
+   </webobject>
    </webobject>
    <div class="card-body">
       <webobject name ="HasTitleConditional">

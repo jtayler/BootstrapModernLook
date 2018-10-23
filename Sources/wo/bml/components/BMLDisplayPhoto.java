@@ -13,4 +13,6 @@ public class BMLDisplayPhoto extends ERD2WCustomComponentWithArgs {
 	public BMLDisplayPhoto(WOContext context) {
         super(context);
     }
+	
+	
 }

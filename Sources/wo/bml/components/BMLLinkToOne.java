@@ -23,14 +23,11 @@ public class BMLLinkToOne extends ERD2WCustomComponentWithArgs {
         super(context);
     }
     
-	public String _un_propertyValue()  {
-		EOEnterpriseObject obj = (EOEnterpriseObject) object();
-		String key = d2wContext().propertyKey();
-		return (String) obj.valueForKey(key);
-	}
-	
 	public Object relationshipValue()  {
 		EOEnterpriseObject obj = (EOEnterpriseObject) objectPropertyValue();
+		if (obj == null) {
+			return null;
+		}
 		String key = d2wContext().keyWhenRelationship();
 		return (Object) obj.valueForKey(key);
 	}
@@ -38,13 +35,13 @@ public class BMLLinkToOne extends ERD2WCustomComponentWithArgs {
 	public String linkURL() {
 		String linkUrl ="";
 		String action = (String) valueForBinding("action");
-
+		ERXGenericRecord obj = (ERXGenericRecord) objectPropertyValue();
 		boolean secure = ERXComponentUtilities.booleanValueForBinding(this, "secure", 
 				ERXRequest.isRequestSecure(context().request()));
 		boolean includeSessionID = context().hasSession() && context().session().storesIDsInURLs();
 		linkUrl = BMLRouteUrlUtils.actionUrlForRecord(context(), 
-				(ERXGenericRecord) object(), 
-				action, null, null, secure, includeSessionID);
+				obj, 
+				"inspect", null, null, secure, includeSessionID);
 
 		return linkUrl;
 	}

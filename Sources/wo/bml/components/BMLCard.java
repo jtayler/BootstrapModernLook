@@ -1,11 +1,15 @@
 package wo.bml.components;
 
 import com.webobjects.appserver.WOActionResults;
+import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
+import com.webobjects.appserver.WORedirect;
 import com.webobjects.directtoweb.D2W;
 import com.webobjects.directtoweb.D2WContext;
 import com.webobjects.directtoweb.D2WCustomComponent;
 import com.webobjects.directtoweb.InspectPageInterface;
+import com.webobjects.eocontrol.EOGenericRecord;
+import com.webobjects.foundation.NSArray;
 import com.webobjects.foundation.NSDictionary;
 
 import er.extensions.appserver.ERXRequest;
@@ -27,20 +31,52 @@ public class BMLCard extends D2WCustomComponent {
 		return valueForD2WKey("card-header");
 	}
 
+	public boolean isPublicPage() {
+		NSArray<String> entities = (NSArray) d2wContext().valueForKey("publicEntityNames");
+		if (entities != null && entities instanceof NSArray) {
+			String entityName = relatedObject().entityName();
+			boolean isPublicPage = entities.contains(entityName);
+			return isPublicPage;
+		}
+		return false;
+	}
+	
+	public EOGenericRecord relatedObject() {
+		String key = (String) keyForD2WKey("inspectActionKeypath");
+		EOGenericRecord relatedObject = (EOGenericRecord) valueForKeyPath(key);
+		if ( relatedObject == null ) {
+			relatedObject = (EOGenericRecord) object();
+		}
+		return relatedObject;
+	}
+	
 	public String linkURL() {
-		String linkUrl ="";
-		String action = (String)valueForBinding("action");
-
 		boolean secure = ERXComponentUtilities.booleanValueForBinding(this, "secure", ERXRequest.isRequestSecure(context().request()));
 		boolean includeSessionID = context().hasSession() && context().session().storesIDsInURLs();
-		linkUrl = BMLRouteUrlUtils.actionUrlForRecord(context(), (ERXGenericRecord) object(), action, null, null, secure, includeSessionID);
-
+		String linkUrl = BMLRouteUrlUtils.actionUrlForRecord(context(), (ERXGenericRecord) relatedObject(), null, null, null, secure, includeSessionID);
+		
 		return linkUrl;
 	}
 
 	public WOActionResults inspectObjectAction() {
 		InspectPageInterface ipi = D2W.factory().inspectPageForEntityNamed(object().entityName(), session());
 		ipi.setObject(object());
+		ipi.setNextPage(context().page());
+		return (WOActionResults)ipi;
+	}
+	
+	public String objectPropertyValuePath() {
+		EOGenericRecord object = (EOGenericRecord) objectPropertyValue();
+		return (String) object.valueForKeyPath(keyWhenRelationship());
+	}
+	
+	public WOActionResults inspectRelatedObjectAction() {
+		String key = (String) keyForD2WKey("inspectActionKeypath");
+		EOGenericRecord relatedObject = (EOGenericRecord) valueForKeyPath(key);
+		//EOGenericRecord relatedObject = (EOGenericRecord) objectPropertyValue();
+
+		InspectPageInterface ipi = D2W.factory().inspectPageForEntityNamed(relatedObject.entityName(), session());
+		ipi.setObject(relatedObject);
 		ipi.setNextPage(context().page());
 		return (WOActionResults)ipi;
 	}
