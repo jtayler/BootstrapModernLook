@@ -1,0 +1,66 @@
+SearchTermSelected : AjaxSubmitButton {
+  updateContainerID = d2wContext.idForMainContainer;
+  functionName = searchTermSelectedFunctionName;
+  action= selectObject;
+}
+
+AjaxAutoComplete : AjaxAutoComplete {
+  class = "form-control";
+  list = currentObjects;
+  value = searchValue;
+  item = item;
+  displayString = itemDisplayString;
+  afterUpdateElement = searchTermSelectedFunction;
+  minChars = minimumCharacterCount;
+}
+
+NewObjectButton : CCSubmitLinkButton {
+  action = addObject;
+  value = "New";
+  class = newButtonClass;
+}
+
+HasPre : WOConditional {
+	condition = d2wContext.baseClassForPrependInputSpan.length;
+}
+
+HasPost : WOConditional {
+	condition = d2wContext.baseClassForInputSpan.length;
+}
+
+AppendSpan : WOGenericContainer {
+	elementName = "span";
+	class = d2wContext.baseClassForInputSpan;
+}
+PrependSpan : WOGenericContainer {
+	elementName = "span";
+	class = d2wContext.baseClassForPrependInputSpan;
+}
+InputGroupDiv : WOGenericContainer {
+	elementName = "DIV";
+	class = d2wContext.baseClassForInputGroup;
+}
+
+InspectObjectButton : ERMDInspectButton {
+  d2wContext = d2wContext;
+  object = currentSelection;
+}
+
+RemoveObjectButton : ERMDRemoveRelatedButton {
+  d2wContext = d2wContext;
+  object = currentSelection;
+  dataSource = dataSource;
+}
+
+ERXNonNullConditional : ERXNonNullConditional {
+  condition = currentSelection;
+  negate=true;
+}
+
+ShowNewButton: WOConditional {
+	condition = isEntityCreatable;
+}
+
+ShowInspectButton: WOConditional {
+	condition = isEntityInspectable;
+}

@@ -1,0 +1,36 @@
+
+  <webobject name="InputGroupDiv">
+   <webobject name="HasPre">
+     <div class="input-group-prepend">
+      <div class="input-group-text">
+      <webobject name="PrependSpan" />
+      </div>
+    </div>
+  </webobject>
+
+		<webobject name = "AjaxAutoComplete" />
+		<webobject name = "SearchTermSelected" />
+
+     <div class="input-group-append">
+       <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+	<div class="dropdown-menu">
+	  <ul class="dropdown-item">
+    	<webobject name = "ShowNewButton">
+         <li><webobject name = "NewObjectButton"/></li>
+    	</webobject>
+    	<webobject name = "ERXNonNullConditional">
+         	<webobject name = "ShowInspectButton">
+             <li><webobject name = "InspectObjectButton"/></li>
+        	</webobject>
+        	<li><webobject name = "RemoveObjectButton"/></li>
+    	</webobject>
+	  </ul>
+	</div>
+      </div>
+
+  
+  
+
+  </webobject>
