@@ -64,6 +64,7 @@
     40 : look = 'ERModernLook' => batchNavigationBarComponentName = BMLBatchNavigationBar [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => templateNameForWizardCreationPage = BMLWizardCreationPage [com.webobjects.directtoweb.Assignment],
     40 : (look = 'ERModernLook' and (task = 'inspect' or task = 'edit')) => tabComponentName = BMLTabPanel [com.webobjects.directtoweb.Assignment],
+    40 : (task = 'edit' and smartRelationship != null and smartRelationship.isToMany = 0) => componentName = BMLEditToOne [com.webobjects.directtoweb.Assignment],
     40 : (task = 'list' or task = 'select' or (task = 'edit' and subTask = 'list')) => repetitionComponentName = BootstrapModernRepetition [com.webobjects.directtoweb.Assignment],
     40 : (task = 'edit' and (smartAttribute.className = 'java.lang.Boolean' or ((smartAttribute.userInfo.erPrototype = 'Boolean' or smartAttribute.userInfo.erPrototype = 'BooleanYesNo') and (smartAttribute.className = 'java.math.BigDecimal' or smartAttribute.className = 'java.lang.Number')))) => componentName = BMLBooleanSelector [com.webobjects.directtoweb.Assignment],
     60 : *true* => emptyListMessage = None Found [com.webobjects.directtoweb.Assignment],

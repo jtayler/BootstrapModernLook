@@ -2,6 +2,7 @@ SearchTermSelected : AjaxSubmitButton {
   updateContainerID = d2wContext.idForMainContainer;
   functionName = searchTermSelectedFunctionName;
   action= selectObject;
+  class="dropdown-item";
 }
 
 AjaxAutoComplete : AjaxAutoComplete {

@@ -1,36 +1,26 @@
-
-  <webobject name="InputGroupDiv">
-   <webobject name="HasPre">
-     <div class="input-group-prepend">
-      <div class="input-group-text">
-      <webobject name="PrependSpan" />
-      </div>
-    </div>
-  </webobject>
-
-		<webobject name = "AjaxAutoComplete" />
-		<webobject name = "SearchTermSelected" />
-
+<style>
+   .auto_complete {
+   border-radius: .625rem;
+   box-shadow: 0 .46875rem 2.1875rem rgba(90,97,105,.1),0 .9375rem 1.40625rem rgba(90,97,105,.1),0 .25rem .53125rem rgba(90,97,105,.12),0 .125rem .1875rem rgba(90,97,105,.1);
+   margin:0.25rem;
+   }
+   .auto_complete ul li {
+   border-radius: .625rem;
+   color: #888; 
+   display:block;
+   padding:1rem;
+   }
+</style>
+<webobject name="InputGroupDiv">
+   <webobject name = "AjaxAutoComplete" />
      <div class="input-group-append">
-       <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
-    </button>
-	<div class="dropdown-menu">
-	  <ul class="dropdown-item">
-    	<webobject name = "ShowNewButton">
-         <li><webobject name = "NewObjectButton"/></li>
-    	</webobject>
-    	<webobject name = "ERXNonNullConditional">
-         	<webobject name = "ShowInspectButton">
-             <li><webobject name = "InspectObjectButton"/></li>
-        	</webobject>
-        	<li><webobject name = "RemoveObjectButton"/></li>
-    	</webobject>
-	  </ul>
-	</div>
+      <div class="input-group-text">
+         <i class="fa fa-search"></i>
       </div>
-
-  
-  
-
-  </webobject>
+   </div>
+</webobject>
+  <div class="dropdown">
+   <ul class="dropdown-menu shadow rounded">
+   <webobject name = "SearchTermSelected" />
+   </ul>
+  </div>
