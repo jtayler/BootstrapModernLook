@@ -1,6 +1,6 @@
 LowerBound: WOTextField {
-	numberformat = formatter;
-	size = length;
+	numberformat = formatter; //VALID
+	size = length; //VALID
 	value = minValue;
 }
 
@@ -17,7 +17,7 @@ SessionLocalizerERD2WQueryNumberRangeFrom: WOString {
 }
 
 UpperBound: WOTextField {
-	numberformat = formatter;
-	size = length;
+	numberformat = formatter; //VALID
+	size = length; //VALID
 	value = maxValue;
 }

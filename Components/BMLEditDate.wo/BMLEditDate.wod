@@ -1,7 +1,7 @@
 TextField1: WOGenericContainer {
 	elementName = "input";
 	class = d2wContext.baseClassForFormInput;
-	name = name;
+	name = name; //VALID
 	id = "datepicker";
 	value = value;
 	type="text";
