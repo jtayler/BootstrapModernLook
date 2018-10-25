@@ -196,9 +196,15 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
 
 .QueryAllActions {
 	float:right;
-	padding-bottom:3rem;
+	padding-bottom:1rem;
 }
-.QueryAllQuery {
+
+
+.QueryAllQuery input {
+	padding: .75rem 1rem;
+font-size: 1.25rem;
+line-height: 1.5;
+border-radius: .5rem;
 	width:100%;
 }
 

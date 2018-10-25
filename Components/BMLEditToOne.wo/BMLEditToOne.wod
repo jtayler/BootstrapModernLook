@@ -12,7 +12,7 @@ AjaxAutoComplete : AjaxAutoComplete {
   item = item;
   displayString = itemDisplayString;
   afterUpdateElement = searchTermSelectedFunction;
-  minChars = minimumCharacterCount;
+  minChars = 0;
 }
 
 NewObjectButton : CCSubmitLinkButton {
