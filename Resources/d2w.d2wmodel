@@ -292,6 +292,32 @@
       "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "RuleIsDisabled"; 
+            "selectorName" = "isEqual"; 
+            "value" = "YES"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "edit"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "pageContainerClass"; 
+        "value" = "page-contents card shadow p-3 mb-5 bg-white rounded"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
         "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
         "qualifiers" = (
           {
@@ -523,6 +549,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForInputSpan"; 
         "value" = "fa fa-usd"; 
+      }; 
+    }, 
+    {
+      "author" = "20"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "classForBanner"; 
+        "value" = "card-header "; 
       }; 
     }, 
     {
@@ -1358,15 +1393,6 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "componentName"; 
         "value" = "BMLEditLargeString"; 
-      }; 
-    }, 
-    {
-      "author" = "100"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "classForBanner"; 
-        "value" = "card-header "; 
       }; 
     }, 
     {
