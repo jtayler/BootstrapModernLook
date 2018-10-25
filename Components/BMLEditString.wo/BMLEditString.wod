@@ -30,7 +30,7 @@ InputGroupDiv : WOGenericContainer {
 }
 
 EditString: WOTextField {
-	size = length;
+	size = length; //VALID
 	value = value;
 	maxlength = d2wContext.maxLength;
 	id = d2wContext.id;

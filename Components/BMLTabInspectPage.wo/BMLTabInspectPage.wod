@@ -44,12 +44,12 @@ SmartEditButton: CCSmartAjaxButton {
 
 IsEditingConditional: WOConditional {
 	_unroll = true;
-	condition = isEditing;
+	condition = isEditing; //VALID
 }
 
 IsNotEditingConditional: WOConditional {
 	_unroll = true;
-	condition = isEditing;
+	condition = isEditing; //VALID
 	negate = true;
 }
 

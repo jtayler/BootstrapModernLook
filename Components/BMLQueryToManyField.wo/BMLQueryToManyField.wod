@@ -1,6 +1,6 @@
 KeyToQueryWith: WOString {
 	_unroll = true;
-	value = displayNameForKeyWhenRelationship;
+	value = displayNameForKeyWhenRelationship; //VALID
 }
 
 String1: WOString {

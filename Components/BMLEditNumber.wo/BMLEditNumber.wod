@@ -1,6 +1,6 @@
 EditNumber: WOTextField {
-	size = length;
-	useDecimalNumber = isDecimalNumber;
+	size = length; //VALID
+	useDecimalNumber = isDecimalNumber; //VALID
 	value = stringValue;
 	name = d2wContext.name;
 	class = d2wContext.baseClassForFormInput;

@@ -1,5 +1,5 @@
 NumberField: WOTextField {
-	size = length;
+	size = length; //VALID
 	value = value;
 	placeholder = d2wContext.name;
 	name = d2wContext.name;
