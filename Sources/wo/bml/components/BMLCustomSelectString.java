@@ -28,5 +28,6 @@ public class BMLCustomSelectString extends ERD2WEditString {
 		String selected = isSelected() ? "selected":"";
 		return selected;
 	}
-		
+	
+	
 }
