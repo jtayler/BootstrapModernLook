@@ -1,0 +1,48 @@
+InputGroupDiv : WOGenericContainer {
+	elementName = "DIV";
+	class = d2wContext.baseClassForInputGroup;
+}
+
+PrependSpan : WOGenericContainer {
+	elementName = "span";
+	class = d2wContext.baseClassForPrependInputSpan;
+}
+
+HasPre : WOConditional {
+	condition = d2wContext.baseClassForPrependInputSpan.length;
+}
+
+HasPost : WOConditional {
+	condition = d2wContext.baseClassForInputSpan.length;
+}
+
+
+Span: WOGenericContainer {
+	elementName = "span";
+	class = d2wContext.baseClassForInputSpan;
+}
+
+Class: WOPopUpButton {
+	list = d2wContext.displayPropertyValues;
+	selection = value;
+	item = string;
+	displayString = value;
+	class = "form-control custom-select";
+}
+
+Option : WOGenericContainer {
+	elementName = "option";
+	selected = selected;
+	value = string;
+}
+
+OptionString : WOString {
+	value = string;
+}
+
+Repetition : WORepetition {
+  list = d2wContext.displayPropertyValues;
+  item = string;
+  index = index;
+}
+

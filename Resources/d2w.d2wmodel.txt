@@ -47,6 +47,7 @@
     20 : *true* => classForErrorBlock = alert alert-danger alert-dismissible fade show [com.webobjects.directtoweb.Assignment],
     20 : (task = 'query' and smartRelationship.isToMany = 1) => componentName = BMLQueryToManyField [com.webobjects.directtoweb.Assignment],
     20 : (task = 'query' and smartAttribute.className = 'java.lang.String') => componentName = BMLQueryStringOperator [com.webobjects.directtoweb.Assignment],
+    20 : (look = 'ERModernLook' and (task = 'inspect' or task = 'edit')) => repetitionComponentName = BootstrapModernRepetition [com.webobjects.directtoweb.Assignment],
     20 : (task = 'list' or task = 'editRelationship' or (task = 'inspect' and smartRelationship.isToMany = 0)) => componentName = BMLLinkToOne [com.webobjects.directtoweb.Assignment],
     20 : (task = 'edit' and session.javaScriptEnabled = 1 and smartAttribute.className = 'com.webobjects.foundation.NSTimestamp') => componentName = BMLEditDate [com.webobjects.directtoweb.Assignment],
     20 : (task = 'query' and (smartAttribute.className = 'java.lang.Number' or smartAttribute.className = 'java.math.BigDecimal')) => componentName = BMLQueryNumberRange [com.webobjects.directtoweb.Assignment],

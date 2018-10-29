@@ -4,61 +4,6 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      text-rendering:optimizeLegibility;
      -webkit-font-smoothing: antialiased;
 }
-
-/*
-
-.Banner {
-	padding: 0;
-	color: none;
-	font-weight: normal;
-	font-size: normal;
-	margin: 0;
-}
-
-.CreateBanner ul {
-	background-color: #e0e3ea;
-	overflow: hidden;
-	margin: 0px;
-	width: auto;
-}
-
-.CreateBanner li {
-	float: none;
-	padding: 0;
-	color: clear;
-	margin-left: 0;
-	background: none;
-	line-height: normal;
-}
-
-.CreateBanner li .BannerItem {
-	display: block;
-	line-height: normal;
-	padding-right: 0;
-}
-
-.CreateBanner li.First {
-	padding: 0;
-	background-image: none;
-	background-color: clear;
-}
-
-.CreateBanner li.Last .BannerItem {
-	background: none;
-}
-
-.CreateBanner .BannerStepNumber {
-	font-weight: normal;
-	padding: 0;
-}
-
-.CreateBanner li.CurrentStep {
-	color: clear;
-	background: none;
-}
-
-*/
-
  .QueryAttrVal {
 	display:inline;
 }
@@ -73,6 +18,8 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      background-image: none;
      background-color: transparent;
 }
+
+ /* d2w page names do not look great and are sorta old school - users know where they are */
 .PageHeader {
      display: none;
 }
@@ -81,18 +28,11 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      padding:0;
      overflow: auto;
 }
- .ObjRow:hover {
-     background-color:#eee;
-     transition: all 300ms ease 0s;
-}
+ 
  .OddObjRow td.AttrColumn {
      background-color:transparent;
 }
 
- .Line .LabelWrapper .Label, .Line label,.ComboTHLink .Label {
-	font-weight:bold;
- }
- 
  .Line .LabelWrapper {
 	 float: none;
      display:inline;
@@ -124,10 +64,19 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      list-style: none;
      display:inline;
 }
+ .ErrBlock li {
+     list-style: none;
+}
+ .ErrorLine .AttrVal span {
+     border: none;
+     width:100%;
+}
  .ERMDEmptyList {
      background:none;
      border:none;
 }
+
+ /* d2w shows a weird widget to see and set fetch limits and batch sizes which is old school */
  .BatchSize {
      display:none;
 }
@@ -135,9 +84,16 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      border: none;
      background-color:transparent;
 }
+ /* d2w reports editing context being dirty which is old school - users know if they edited */
  .Line label abbr {
      visibility:hidden;
 }
+ .ChangesMarker img {
+     width:0;
+     height:0;
+}
+
+ /* get the busy indicator looking normal */
  .GlobalBusyIndicator {
      margin: auto;
      width: 10%;
@@ -146,27 +102,7 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
  .GlobalBusyIndicator img {
      float:right;
      width:20px;
-    /* you can use % */
      height: auto;
-}
- .ErrBlock li {
-     list-style: none;
-}
- .InnerWrapper {
-     padding:0.5rem;
-     border:none;
-}
- .ChangesMarker img {
-     width:0;
-     height:0;
-}
- .ErrorLine .AttrVal span {
-     border: none;
-     width:100%;
-}
- .Line, .Attributes, .AttrVal {
-     color: #aaaaaa;
-     font-weight: 100;
 }
  /* end modern look overrides */
 
@@ -177,8 +113,42 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
 
 
 
+
+
  /* a few app level defaults modern look */
  
+ 
+  /* just prefer no underlines... */
+ a:hover {
+     text-decoration:none !important;
+     transition: all 300ms ease 0s;
+}
+
+ /* This rule gives the main container style some marins */
+ .container-fluid {
+     margin-top:0.5rem;
+     padding-top:0.5rem;
+}
+ .InnerWrapper {
+     padding:0.5rem;
+     border:none;
+}
+
+ .Line .LabelWrapper .Label, .Line label,.ComboTHLink .Label {
+	font-weight:bold;
+ }
+ 
+ .Line, .Attributes, .AttrVal {
+     color: #aaaaaa;
+     font-weight: 100;
+}
+ 
+  /* add list view hover because it is sorta nice that way */
+  
+ .ObjRow:hover {
+     background-color:#EEE;
+     transition: all 300ms ease 0s;
+}
  
   /* the alerts have a bottom margin you have to take off...sigh. */
  
@@ -196,15 +166,19 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
 
 .QueryAllActions {
 	float:right;
+	padding-right:1rem;
 	padding-bottom:1rem;
 }
-
-
+.QueryAllQuery {
+	padding-right:1rem;
+	float:none;
+	width:auto;
+}
 .QueryAllQuery input {
 	padding: .75rem 1rem;
-font-size: 1.25rem;
-line-height: 1.5;
-border-radius: .5rem;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	border-radius: .5rem;
 	width:100%;
 }
 
@@ -258,18 +232,6 @@ border-radius: .5rem;
  input[type=url]:invalid {
      border-color: #C33;
      box-shadow: inset 0 0.0625em 0.125em rgba(0,0,0,.2), 0 0 0.125em rgba(203,0,2,.8);
-}
-
- /* just prefer no underlines... */
- a:hover {
-     text-decoration:none !important;
-     transition: all 300ms ease 0s;
-}
-
- /* This rule gives the main container style some marins */
- .container-fluid {
-     margin-top:0.5rem;
-     padding-top:0.5rem;
 }
 
 
