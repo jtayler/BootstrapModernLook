@@ -1,7 +1,19 @@
 LowerBound: WOTextField {
-	numberformat = formatter; //VALID
+	numberformat = "#,##0"; //VALID
 	size = length; //VALID
 	value = minValue;
+	class="custom-slider-input";
+	name="custom-slider-value-1";
+	type="hidden";
+}
+
+UpperBound: WOTextField {
+	numberformat = "#,##0"; //VALID
+	size = length; //VALID
+	value = maxValue;
+	class="custom-slider-input";
+	name="custom-slider-value-2";
+	type="hidden";
 }
 
 SessionLocalizerERD2WQueryNumberRangeTo: WOString {
@@ -16,8 +28,3 @@ SessionLocalizerERD2WQueryNumberRangeFrom: WOString {
 	value = session.localizer.ERD2WQueryNumberRange.from;
 }
 
-UpperBound: WOTextField {
-	numberformat = formatter; //VALID
-	size = length; //VALID
-	value = maxValue;
-}

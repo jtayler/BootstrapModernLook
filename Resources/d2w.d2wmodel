@@ -15,7 +15,7 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "numberRangeHigh"; 
-        "value" = "150"; 
+        "value" = "100"; 
       }; 
     }, 
     {
@@ -393,15 +393,6 @@
     {
       "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForNavBar"; 
-        "value" = "navbar sticky-top navbar-toggleable-md navbar-expand-lg navbar-light shadow-sm"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
         "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
         "qualifiers" = (
@@ -429,6 +420,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForInputSpan"; 
         "value" = "fa fa-link"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForNavBar"; 
+        "value" = "navbar navbar-nav sticky-top navbar-toggleable-md navbar-expand-lg navbar-dark bg-secondary shadow"; 
       }; 
     }, 
     {
@@ -890,7 +890,7 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForInputSpan"; 
-        "value" = "fa fa-calendar-o"; 
+        "value" = "fa fa-calendar"; 
       }; 
     }, 
     {
