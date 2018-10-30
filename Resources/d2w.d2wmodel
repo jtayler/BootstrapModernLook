@@ -257,15 +257,6 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForNavBar"; 
-        "value" = "navbar navbar-expand-lg navbar-dark bg-dark"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForPreviousButton"; 
         "value" = "btn btn-outline-secondary mr-4 mb-4"; 
       }; 
@@ -397,6 +388,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "inputTypeForObject"; 
         "value" = "url"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForNavBar"; 
+        "value" = "navbar sticky-top navbar-toggleable-md navbar-expand-lg navbar-light shadow-sm"; 
       }; 
     }, 
     {
@@ -558,6 +558,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "classForBanner"; 
         "value" = "card-header "; 
+      }; 
+    }, 
+    {
+      "author" = "20"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "objectCardClass"; 
+        "value" = "card shadow"; 
       }; 
     }, 
     {
@@ -1441,6 +1450,14 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "componentName"; 
         "value" = "BMLEditLargeString"; 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = ""; 
       }; 
     }, 
     {

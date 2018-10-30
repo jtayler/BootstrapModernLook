@@ -1,3 +1,7 @@
+CardClass : WOGenericContainer {
+	elementName = "div";
+	class = d2wContext.objectCardClass;
+}
 CardLinkTitled: WOHyperlink {
 	escapeHTML=false;
 	//string = cardLinkTitle;
@@ -43,7 +47,7 @@ HasCardImageTop : ERXNonNullConditional {
 	condition = cardImageSrc;
 }
 HasCardFooter : ERXNonNullConditional {
-	condition = inspectAction;
+	condition = cardFooterText;
 }
 HasTextConditional : ERXNonNullConditional {
 	condition = cardText;
