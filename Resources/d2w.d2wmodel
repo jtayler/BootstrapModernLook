@@ -15,7 +15,7 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "numberRangeHigh"; 
-        "value" = "100"; 
+        "value" = "50"; 
       }; 
     }, 
     {

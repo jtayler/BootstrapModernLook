@@ -1,6 +1,5 @@
 LowerBound: WOTextField {
-	numberformat = "#,##0"; //VALID
-	size = length; //VALID
+	numberformat = formatter; //VALID
 	value = minValue;
 	class="custom-slider-input";
 	name="custom-slider-value-1";
@@ -8,8 +7,7 @@ LowerBound: WOTextField {
 }
 
 UpperBound: WOTextField {
-	numberformat = "#,##0"; //VALID
-	size = length; //VALID
+	numberformat = formatter; //VALID
 	value = maxValue;
 	class="custom-slider-input";
 	name="custom-slider-value-2";

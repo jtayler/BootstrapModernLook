@@ -1,6 +1,6 @@
 (
     10 : *true* => numberRangeLow = 0 [com.webobjects.directtoweb.Assignment],
-    10 : *true* => numberRangeHigh = 100 [com.webobjects.directtoweb.Assignment],
+    10 : *true* => numberRangeHigh = 50 [com.webobjects.directtoweb.Assignment],
     10 : *true* => cellTabClass = nav-item [com.webobjects.directtoweb.Assignment],
     10 : *true* => baseClassForInputSpan =  [com.webobjects.directtoweb.Assignment],
     10 : *true* => inputTypeForObject = text [com.webobjects.directtoweb.Assignment],
