@@ -1,10 +1,9 @@
 package wo.bml.components;
 
 import com.webobjects.appserver.WOContext;
+import com.webobjects.directtoweb.D2WEditDate;
 
-import er.directtoweb.components.dates.ERDEditDateJavascript;
-
-public class BMLEditDate extends ERDEditDateJavascript {
+public class BMLEditDate extends D2WEditDate {
     /**
 	 * 
 	 */

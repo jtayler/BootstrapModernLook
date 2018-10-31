@@ -9,8 +9,9 @@
   high = <wo:str value="$d2wContext.numberRangeHigh" />;
   low = <wo:str value="$d2wContext.numberRangeLow" />;
   jQuery('#shards-custom-slider').customSlider({
+    <wo:str value="$d2wContext.customSliderConfigurationText" />
 	step: 1,
-    start: [low,high],
+    start: [high * 0.2, high / 1.2],
     behaviour: 'tap-drag',
     tooltips: true,
     format: wNumb({

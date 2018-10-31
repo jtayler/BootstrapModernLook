@@ -1,10 +1,12 @@
-TextField1: WOGenericContainer {
+TextField1: WOTextField {
 	elementName = "input";
 	class = d2wContext.baseClassForFormInput;
 	name = name; //VALID
 	id = "datepicker";
 	value = value;
-	type="text";
+	style = "visible;";
+	type = "text";
+	dateformat = formatter;
 }
 PrependSpan : WOGenericContainer {
 	elementName = "span";
