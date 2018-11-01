@@ -1,3 +1,6 @@
+InputGroupWrapper: BMLInputGroupWrapper {
+	localContext = d2wContext;
+}
 TextField1: WOTextField {
 	elementName = "input";
 	class = d2wContext.baseClassForFormInput;
@@ -7,27 +10,4 @@ TextField1: WOTextField {
 	style = "visible;";
 	type = "text";
 	dateformat = formatter;
-}
-PrependSpan : WOGenericContainer {
-	elementName = "span";
-	class = d2wContext.baseClassForPrependInputSpan;
-}
-
-HasPre : WOConditional {
-	condition = d2wContext.baseClassForPrependInputSpan.length;
-}
-
-HasPost : WOConditional {
-	condition = d2wContext.baseClassForInputSpan.length;
-}
-
-
-Span: WOGenericContainer {
-	elementName = "span";
-	class = d2wContext.baseClassForInputSpan;
-}
-
-InputGroupDiv : WOGenericContainer {
-	elementName = "DIV";
-	class = d2wContext.baseClassForInputGroup;
 }

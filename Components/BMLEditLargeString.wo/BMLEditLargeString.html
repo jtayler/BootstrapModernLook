@@ -1,35 +1,22 @@
-<span id="count_message"></span>
-<webobject name="InputGroupDiv">
-   <webobject name="HasPre">
-     <div class="input-group-prepend">
-      <div class="input-group-text">
-        <webobject name="PrependSpan" />
-      </div>
-    </div>
-   </webobject>
-
-<WEBOBJECT NAME=EditString></WEBOBJECT>
-
-   <webobject name="HasPost">
-   <div class="input-group-append">
-      <div class="input-group-text">
-        <webobject name="Span" />
-      </div>
-   </div>
-  </webobject>
+<span id="count_message">ur</span>
+<webobject name="InputGroupWrapper">
+	<WEBOBJECT NAME=EditString></WEBOBJECT>
 </webobject>
 
-
 <script>
-    $(document).ready(function(){
       var text_max = <wo:str value="$d2wContext.maxLength" />;
-      $('#count_message').html( text_max );
-
-      $('#textarea').keyup(function() {
-        var text_length = $('#textarea').val().length;
+      var count = jQuery('#count_message');
+      var text = jQuery('#textarea');
+      count.html( text_max );
+	  setCount();
+	  
+      text.keyup(function() {
+      	setCount();
+      });
+      function setCount() {
+        var text_length = text.val().length;
         var text_remaining = text_max - text_length;
-  
-        $('#count_message').html( text_remaining );
-      });      
-    });
+  		
+        count.html( text_remaining );
+      }
 </script>

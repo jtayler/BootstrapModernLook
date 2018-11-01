@@ -6,26 +6,35 @@
 </div>
 <!-- JavaScript -->
 <script>
-  high = <wo:str value="$d2wContext.numberRangeHigh" />;
-  low = <wo:str value="$d2wContext.numberRangeLow" />;
+  numberRangeHigh = <wo:str value="$d2wContext.numberRangeHigh" />;
+  numberRangeLow = <wo:str value="$d2wContext.numberRangeLow" />;
   jQuery('#shards-custom-slider').customSlider({
-    <wo:str value="$d2wContext.customSliderConfigurationText" />
+    <wo:str value="$d2wContext.customSlider" />
 	step: 1,
-    start: [high * 0.2, high / 1.2],
+    start: [numberRangeHigh * 0.25, numberRangeHigh * 0.75],
     behaviour: 'tap-drag',
     tooltips: true,
     format: wNumb({
+		mark: '.',
+		thousand: ',',
+    	prefix: '',
         decimals: 0
     }),
     connect: true,
     range: {
-      'min': low,
-      'max': high
+      'min': numberRangeLow,
+      'max': numberRangeHigh
     },
     pips: {
+    format: wNumb({
+		mark: '.',
+		thousand: ',',
+    	prefix: '',
+        decimals: 0
+    }),
       mode: 'positions',
-      values: [0, high],
-      density: 2
-      }
+      values: [0, 25, 50, 75, 100],
+      density: 5
+    }
   });
 </script>

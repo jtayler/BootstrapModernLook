@@ -1,15 +1,4 @@
-InputGroupWrapper: BMLInputGroupWrapper {
-	localContext = d2wContext;
-}
-EditString: WOText {
-	cols = d2wContext.length;
-	rows = d2wContext.rows;
-	value = value;
-	disabled = disabled;
-	id = "textarea";
-	title = d2wContext.title;
-	name = d2wContext.name;
-	class = d2wContext.baseClassForFormInput;
+ComponentContent: WOComponentContent {
 }
 PrependSpan : WOGenericContainer {
 	elementName = "span";
@@ -32,5 +21,5 @@ Span: WOGenericContainer {
 
 InputGroupDiv : WOGenericContainer {
 	elementName = "DIV";
-	class = "input-group";
+	class = d2wContext.baseClassForInputGroup;
 }

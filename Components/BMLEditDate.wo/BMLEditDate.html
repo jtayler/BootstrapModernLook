@@ -1,27 +1,15 @@
-<webobject name="InputGroupDiv">
-   <webobject name="HasPre">
-     <div class="input-group-prepend">
-      <div class="input-group-text">
-        <webobject name="PrependSpan" />
-      </div>
-    </div>
-   </webobject>
-  <WEBOBJECT NAME=TextField1></WEBOBJECT>
+<webobject name="InputGroupWrapper">
+
+<webobject name=TextField1></webobject>
   
 <!-- JavaScript -->
 <script>
   jQuery('#datepicker').datepicker({
       calendarWeeks: true,
-      autoclose: false,
+      autoclose: true,
+      pickTime: false,
       todayHighlight: true
   });
 </script>
 
-   <webobject name="HasPost">
-   <div class="input-group-append">
-      <div class="input-group-text">
-        <webobject name="Span" />
-      </div>
-   </div>
-  </webobject>
 </webobject>
