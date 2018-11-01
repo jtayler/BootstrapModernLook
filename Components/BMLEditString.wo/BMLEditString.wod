@@ -1,32 +1,10 @@
-READONLY : WOConditional {
-	condition = d2wContext.readOnly;
+InputGroupWrapper: BMLInputGroupWrapper {
+	localContext = d2wContext;
 }
-
 String : WOString {
 	value = value;
 	valueWhenEmpty = d2wContext.valueWhenEmpty;
 	escapeHTML = d2wContext.escapeHTML;
-}
-
-HasPre : WOConditional {
-	condition = d2wContext.baseClassForPrependInputSpan.length;
-}
-
-HasPost : WOConditional {
-	condition = d2wContext.baseClassForInputSpan.length;
-}
-
-AppendSpan : WOGenericContainer {
-	elementName = "span";
-	class = d2wContext.baseClassForInputSpan;
-}
-PrependSpan : WOGenericContainer {
-	elementName = "span";
-	class = d2wContext.baseClassForPrependInputSpan;
-}
-InputGroupDiv : WOGenericContainer {
-	elementName = "DIV";
-	class = d2wContext.baseClassForInputGroup;
 }
 
 EditString: WOTextField {

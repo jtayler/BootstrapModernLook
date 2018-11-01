@@ -46,6 +46,7 @@
     20 : task = 'list' => shouldShowDefaultPageButtons = false [com.webobjects.directtoweb.BooleanAssignment],
     20 : *true* => baseClassForInputGroup = input-group input-group-lg mb-3 [com.webobjects.directtoweb.Assignment],
     20 : pageConfiguration like '*Create*' => saveButtonLabel = Create [er.directtoweb.ERDDelayedLocalizedAssignment],
+    20 : componentName = 'BMLEditToOne' => baseClassForInputSpan = fa fa-search [com.webobjects.directtoweb.Assignment],
     20 : *true* => classForErrorBlock = alert alert-danger alert-dismissible fade show [com.webobjects.directtoweb.Assignment],
     20 : componentName = 'BMLEditLargeString' => baseClassForInputGroup = input-group mb-3 [com.webobjects.directtoweb.Assignment],
     20 : (task = 'query' and smartRelationship.isToMany = 1) => componentName = BMLQueryToManyField [com.webobjects.directtoweb.Assignment],

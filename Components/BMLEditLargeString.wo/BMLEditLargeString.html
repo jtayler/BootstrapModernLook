@@ -1,4 +1,4 @@
-<span id="count_message">ur</span>
+<span id="count_message"></span>
 <webobject name="InputGroupWrapper">
 	<WEBOBJECT NAME=EditString></WEBOBJECT>
 </webobject>
@@ -7,16 +7,20 @@
       var text_max = <wo:str value="$d2wContext.maxLength" />;
       var count = jQuery('#count_message');
       var text = jQuery('#textarea');
-      count.html( text_max );
 	  setCount();
 	  
       text.keyup(function() {
       	setCount();
       });
+      
       function setCount() {
+
         var text_length = text.val().length;
         var text_remaining = text_max - text_length;
-  		
         count.html( text_remaining );
       }
+
+var Format = wNumb({
+	decimals: 2
+});
 </script>

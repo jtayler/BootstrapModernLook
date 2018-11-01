@@ -1,3 +1,6 @@
+InputGroupWrapper: BMLInputGroupWrapper {
+	localContext = d2wContext;
+}
 SearchTermSelected : AjaxSubmitButton {
   updateContainerID = d2wContext.idForMainContainer;
   functionName = searchTermSelectedFunctionName;
