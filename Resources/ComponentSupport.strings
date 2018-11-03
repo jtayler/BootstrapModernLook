@@ -1,0 +1,30 @@
+{
+  "numberConfiguration" = "
+    step: 1,
+    start: [numberRangeHigh * 0.25, numberRangeHigh * 0.75],
+    behaviour: 'tap-drag',
+    tooltips: true,
+    format: wNumb({
+		mark: '.',
+		thousand: ',',
+    	prefix: '',
+        decimals: 0
+    }),
+    connect: true,
+    range: {
+      'min': numberRangeLow,
+      'max': numberRangeHigh
+    },
+    pips: {
+    format: wNumb({
+		mark: '.',
+		thousand: ',',
+    	prefix: '',
+        decimals: 0
+    }),
+      mode: 'positions',
+      values: [0, 25, 50, 75, 100],
+      density: 5
+    }
+";  
+}

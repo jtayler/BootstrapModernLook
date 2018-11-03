@@ -21,8 +21,6 @@ public class BMLWizardDetailedBanner extends ERMDWizardDetailedBanner {
     }
 
     public WOComponent switchSubmitTab() {
-        Integer selectedIndex = 1;
-
         return ((BMLWizardCreationPage) parent()).previousStep();
     }
 
@@ -41,11 +39,11 @@ public class BMLWizardDetailedBanner extends ERMDWizardDetailedBanner {
 	}
 	
 	public String listLinkClass() {
-		String result = "nav-link";
+		String result = "nav-link chevron-right";
 		if (tabItem != null && tabItem.equals(currentTab())) {
 			result = result + " active ";
 		} else {
-			result = result + " disabled ";
+			result = result + " __disabled ";
 		}
 		if (index == tabSectionsContents().count() - 1) {
 			result = result + " last-item";

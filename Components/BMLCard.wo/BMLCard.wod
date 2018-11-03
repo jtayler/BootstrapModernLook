@@ -18,6 +18,7 @@ CardActionTitled: WOHyperlink {
 }
 CardLinkTitle: WOString {
 	value = cardLinkTitle;
+	escapeHTML=false;
 }
 CardLink: WOHyperlink {
 	//action = inspectRelatedObjectAction;

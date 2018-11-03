@@ -105,6 +105,18 @@ Script: WOJavaScript {
 	hideInComment = true;
 }
 
+TabRepetition: WORepetition {
+	item = currentTab;
+	list = tabSectionsContents;
+}
+
+SectionWrapper : WOGenericContainer {
+	elementName = "div";
+	class = "card-body";
+}
+
+
+
 
 TabPanel : WOSwitchComponent {
 	WOComponentName = tabComponentName;

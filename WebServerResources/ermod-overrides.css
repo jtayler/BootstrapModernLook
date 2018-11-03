@@ -11,6 +11,7 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      padding:0;
 }
  .BottomBatchNav {
+ 	padding:1rem;
      width:100%;
 }
  .Line, .LineInner {
@@ -119,17 +120,16 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
  
  
   /* just prefer no underlines... */
- a:hover {
+__a:hover {
      text-decoration:none !important;
-     transition: all 300ms ease 0s;
 }
 
  /* This rule gives the main container style some marins */
- .container-fluid {
+ .__container-fluid {
      margin-top:0.5rem;
      padding-top:0.5rem;
 }
- .InnerWrapper {
+ .__InnerWrapper {
      padding:0.5rem;
      border:none;
 }
@@ -141,13 +141,6 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
  .Line, .Attributes, .AttrVal {
      color: #aaaaaa;
      font-weight: 100;
-}
- 
-  /* add list view hover because it is sorta nice that way */
-  
- .ObjRow:hover {
-     background-color:#EEE;
-     transition: all 300ms ease 0s;
 }
  
   /* the alerts have a bottom margin you have to take off...sigh. */
