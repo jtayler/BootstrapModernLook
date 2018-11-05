@@ -1,6 +1,8 @@
 # BootstrapModernLook
 
-This framework is designed to support modern Bootstrap (v.4.1) and specifically Shards style UI using ERDModernLook. This framework provides the D2W Custom Rules and Components to override where needed, and to provide completely modern UI for forms, tables navigation bars, carousels and cards —all available via D2W.
+This framework is designed to offer bootstrap components and tagging for very large-scale industrial database applications of very large size, such as iTunes Store and App Store or other high-availability enterprise level systems.
+
+It is made to support modern Bootstrap (v.4.1) and specifically Shards style UI using ERDModernLook. This framework provides the D2W Custom Rules and Components to override where needed, and to provide completely modern UI for forms, tables navigation bars, carousels and cards —all available via D2W.
 
 https://designrevision.com/downloads/shards/
 
