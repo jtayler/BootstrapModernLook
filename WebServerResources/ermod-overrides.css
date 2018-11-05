@@ -35,8 +35,13 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      background-color:transparent;
 }
 
+
+
+ /* decide if you like the float and inline or not */
+
  .Line .LabelWrapper {
 	 float: none;
+	 width:auto;
      display:inline;
      padding:0;
      margin:0;
@@ -45,6 +50,9 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      margin-bottom:1rem;
      padding: 0;
 }
+
+
+
  .ERAttachmentFlexibleEditor .AEEdit {
      width:100%;
      border:none;
@@ -106,6 +114,26 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
      width:20px;
      height: auto;
 }
+
+  /* alerts have a bottom margin you have to take off...sigh. */
+ 
+ .alert ul {
+ 	-webkit-margin-before: 0;
+ 	-webkit-margin-after: 0;
+ 	-webkit-padding-start: 0;
+ }
+ 
+ /* Remove old and ugly UI elements */
+.ERXJSFlyOver,.ChangesMarker,.ERDPrinterButton {
+     display: none;
+}
+
+ /* Reduce padding just a bit for lists that are embedded */
+.EmbeddedListWrapper .card-body,.Embeddedcard-body  {
+	padding:0.5rem;
+}
+
+
  /* end modern look overrides */
 
 
@@ -120,37 +148,9 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
  /* a few app level defaults modern look */
  
  
-  /* just prefer no underlines... */
-__a:hover {
-     text-decoration:none !important;
-}
-
- /* This rule gives the main container style some marins */
- .__container-fluid {
-     margin-top:0.5rem;
-     padding-top:0.5rem;
-}
- .__InnerWrapper {
-     padding:0.5rem;
-     border:none;
-}
-
- .Line .LabelWrapper .Label, .Line label,.ComboTHLink .Label {
-	font-weight:bold;
- }
- 
  .Line, .Attributes, .AttrVal {
-     color: #aaaaaa;
      font-weight: 100;
 }
- 
-  /* the alerts have a bottom margin you have to take off...sigh. */
- 
- .alert ul {
- 	-webkit-margin-before: 0;
- 	-webkit-margin-after: 0;
- 	-webkit-padding-start: 0;
- }
  
   /* not sure why this isn't there, maybe also should be in rules, but all other inputs have margin? */
  
@@ -158,6 +158,7 @@ __a:hover {
  	padding:0.65rem;
  }
 
+  /* query all page isn't really supported so we'll hack a few quick things to make it tolerable */
 .QueryAllActions {
 	float:right;
 	padding-right:1rem;
@@ -196,23 +197,6 @@ __a:hover {
  .CreateBanner li.active   {
      font-weight: 800;
      transition: all 300ms ease 0s;
-}
-
- /* Just set these for some reason they need adjustment */
- H2, H3 {
-     font-weight: 300;
-     font-size:150%;
-}
-
-
- /* Remove old and ugly UI elements */
-.ERXJSFlyOver,.ChangesMarker,.ERDPrinterButton {
-     display: none;
-}
-
- /* Reduce padding just a bit for lists that are embedded */
-.EmbeddedListWrapper .card-body,.Embeddedcard-body  {
-	padding:0.5rem;
 }
 
  /* This rule removes the corner border in fullscreen inspect tab cards */
