@@ -240,7 +240,7 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "baseClassForPreviousButton"; 
-        "value" = "btn btn-outline-secondary mr-4 mb-4"; 
+        "value" = "btn btn-outline-success mr-4 mb-4"; 
       }; 
     }, 
     {
@@ -277,32 +277,6 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "attachmentEditorEditButtonClass"; 
         "value" = "btn btn-sm btn-pill btn-outline-primary m-2"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "lhs" = {
-        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
-        "qualifiers" = (
-          {
-            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-            "key" = "RuleIsDisabled"; 
-            "selectorName" = "isEqual"; 
-            "value" = "YES"; 
-          }, 
-          {
-            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-            "key" = "task"; 
-            "selectorName" = "isEqualTo"; 
-            "value" = "edit"; 
-          }
-        ); 
-      }; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "pageContainerClass"; 
-        "value" = "page-contents card shadow p-3 mb-5 bg-white rounded"; 
       }; 
     }, 
     {
@@ -362,6 +336,32 @@
       "author" = "10"; 
       "class" = "com.webobjects.directtoweb.Rule"; 
       "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "RuleIsDisabled"; 
+            "selectorName" = "isEqual"; 
+            "value" = "YES"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "task"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "edit"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "pageContainerClass"; 
+        "value" = "container page-contents card shadow p-3 mb-5 bg-white rounded"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
         "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
         "qualifiers" = (
           {
@@ -388,15 +388,6 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "inputTypeForObject"; 
         "value" = "url"; 
-      }; 
-    }, 
-    {
-      "author" = "10"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "baseClassForNavBar"; 
-        "value" = "navbar navbar-nav sticky-top navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark shadow"; 
       }; 
     }, 
     {
@@ -556,6 +547,15 @@
       "class" = "com.webobjects.directtoweb.Rule"; 
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "baseClassForNavBar"; 
+        "value" = "navbar navbar-fixed-left pb-4 pt-4 navbar-fixed-left navbar-nav sticky-top navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark shadow"; 
+      }; 
+    }, 
+    {
+      "author" = "10"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "customSliderConfigurationText"; 
         "value" = "step: 1,\n\tstart: [high * 0.2, high / 1.2],\n\tbehaviour: 'tap-drag',\n\ttooltips: true,\n\tformat: wNumb({\n\t\tdecimals: 0\n\t}),\n\tconnect: true,\n\trange: {\n\t\t'min': low,\n\t\t'max': high\n\t},\n\tpips: {\n\t\tmode: 'positions',\n\t\tvalues: [0, high],\n\t\tdensity: 2\n\t}"; 
       }; 
@@ -566,7 +566,7 @@
       "rhs" = {
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "classForBanner"; 
-        "value" = "card-header "; 
+        "value" = "card-header"; 
       }; 
     }, 
     {

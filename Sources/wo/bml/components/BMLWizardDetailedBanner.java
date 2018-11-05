@@ -39,11 +39,11 @@ public class BMLWizardDetailedBanner extends ERMDWizardDetailedBanner {
 	}
 	
 	public String listLinkClass() {
-		String result = "nav-link chevron-right";
+		String result = "nav-link";
 		if (tabItem != null && tabItem.equals(currentTab())) {
 			result = result + " active ";
 		} else {
-			result = result + " __disabled ";
+			result = result + " disabled ";
 		}
 		if (index == tabSectionsContents().count() - 1) {
 			result = result + " last-item";
