@@ -138,15 +138,76 @@ body, .ObjButton, .DialogButton, .EmbeddedEditRelationshipBtmActions .PageButton
 
 
 
+@keyframes bouncing {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
 
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -11px, 0);
+  }
 
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, 11, 0);
+  }
 
+  90% {
+    transform: translate3d(0,0,0);
+  }
+}
+
+@keyframes shaking {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(-11px, 0, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(3px,0,0);
+  }
+}
+
+.bounce {
+  animation-duration: 0.68s;
+  animation-name: bouncing;
+  animation-iteration-count: 1;
+}
+
+.alert, .ErrorLine {
+  animation-duration: 0.18s;
+  animation-name: shaking;
+  animation-iteration-count: 1;
+}
 
 
 
 
  /* a few app level defaults modern look */
  
+__.dropdown-menu>.dropdown-item:hover {
+    border-color:#eee;
+	border-style:solid;
+    border-left-width:10px;
+}
+__.dropdown-menu>.dropdown-item {
+    border-color:transparent;
+    border-style:solid;
+    border-left-width:10px;
+}
+
  
  .Line, .Attributes, .AttrVal {
      font-weight: 100;
