@@ -5,7 +5,7 @@ EditString: WOText {
 	cols = d2wContext.length;
 	rows = d2wContext.rows;
 	value = value;
-	disabled = disabled;
+	disabled = d2wContext.disabled;
 	id = "textarea";
 	title = d2wContext.title;
 	name = d2wContext.name;
