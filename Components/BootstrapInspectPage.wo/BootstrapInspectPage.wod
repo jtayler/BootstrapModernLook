@@ -50,6 +50,15 @@ SmartFindButton: CCSmartAjaxButton {
     updateContainerID = d2wContext.idForParentMainContainer;
 }
 
+SmartDeleteButton: CCSmartAjaxButton {
+	action = smartDeleteAction;
+	alt = "Delete this object";
+	value = d2wContext.deleteButtonLabel;
+	class = d2wContext.baseClassForDeleteButton;
+	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
+    updateContainerID = d2wContext.idForParentMainContainer;
+}
+
 SmartEditButton: CCSmartAjaxButton {
 	action = smartEditAction;
 	alt = "Edits this object";
@@ -68,7 +77,19 @@ InspectPageRepetition: WOSwitchComponent {
 	d2wContext = d2wContext;
 	object = object;
 }
+ListRepetition: ERXWORepetition {
+	list = d2wContext.displayRelationshipKeys;
+	item = currentRelationshipKey;
+}
 
+CreateButton: CCSmartAjaxButton {
+	action = editRelationshipAction;
+	alt = "Creates related object";
+	value = relationshipEntityName;
+	class = d2wContext.baseClassForCreateButton;
+	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
+    updateContainerID = d2wContext.idForParentMainContainer;
+}
 IsEditingConditional: WOConditional {
 	_unroll = true;
 	condition = isEditing;
@@ -92,6 +113,9 @@ IsObjectSmartCreatable: WOConditional {
 }
 IsObjectSmartFindable: WOConditional {
 	condition = d2wContext.isEntitySmartFindable;
+}
+IsObjectSmartDeletable: WOConditional {
+	condition = d2wContext.isEntitySmartDeletable;
 }
 
 PageWrapper: WOSwitchComponent {
