@@ -118,7 +118,7 @@ public class BootstrapInspectPage extends ERMODInspectPage implements NextPageDe
 		 ERXGenericRecord object = (ERXGenericRecord) object();
 		 object.delete();
 		 object.editingContext().saveChanges();
-		return (WOActionResults) nextPage;
+		return (WOActionResults) nextPage();
 	}
 	
 	public WOActionResults smartFindAction() {
