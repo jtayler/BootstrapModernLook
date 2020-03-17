@@ -121,7 +121,7 @@ public class BootstrapInspectPage extends ERMODInspectPage implements NextPageDe
 		 object.editingContext().deleteObject(object);
 		 object.editingContext().saveChanges();
 		 
-		return (WOActionResults) nextPage().generateResponse();
+		return (WOActionResults) nextPage();
 	}
 	
 	public WOActionResults smartFindAction() {
