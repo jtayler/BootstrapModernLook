@@ -19,4 +19,8 @@ EditString: WOTextField {
 	placeholder=d2wContext.propertyTitle;
 	aria-label="Default";
 	aria-describedby="basic-addon1";
+	autocomplete="off";
+	autocorrect="off";
+	autocapitalize="off";
+	spellcheck="false";
 }
