@@ -72,6 +72,11 @@ SectionRepetition: ERXWORepetition {
 	item = currentSection;
 }
 
+PageClass : WOGenericContainer {
+	elementName = "div";
+	class = d2wContext.pageContainerClass;
+}
+
 ObjectTable : WOGenericContainer {
 	elementName = "table";
 	class = d2wContext.classForObjectTable;
