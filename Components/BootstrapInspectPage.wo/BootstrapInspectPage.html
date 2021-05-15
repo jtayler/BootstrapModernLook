@@ -1,67 +1,64 @@
 <webobject name = "PageWrapper">
   <webobject name = "RequiredWrapper">
-<webobject name = "PageClass">
+    <webobject name = "PageClass">
       <webobject name = "ShowTopActionBlock">
         <webobject name = "TopActionBlock">
-        <webobject name="ShouldShowDefaultPageButtons">
-          <ul class = "ActionList">
-            <webobject name = "IsEditingConditional">
-              <li><webobject name = "CancelButtonSpan" />
-				<webobject name = "CancelButton">
-                <webobject name = "CancelButtonSpan" />                
-                </webobject>
+          <webobject name = "ShouldShowDefaultPageButtons">
+            <ul class = "ActionList">
+              <webobject name = "IsEditingConditional">
+                <li>
+                  <webobject name = "CancelButtonSpan" />
+                  <webobject name = "CancelButton"> <webobject name = "CancelButtonSpan" /> </webobject>
                 </li>
-              <li><webobject name = "SubmitChanges" /></li>
-            </webobject>
-            <webobject name = "IsNotEditingConditional">
-              <webobject name = "ShowCancel">
-                <li><webobject name = "ReturnButton" /></li>
+                <li><webobject name = "SubmitChanges" /></li>
               </webobject>
-              <webobject name = "IsObjectEditable">
-                <li><webobject name = "EditButton" /></li>
+              <webobject name = "IsNotEditingConditional">
+                <webobject name = "ShowCancel">
+                  <li><webobject name = "ReturnButton" /></li>
+                </webobject>
+                <webobject name = "IsObjectEditable">
+                  <li><webobject name = "EditButton" /></li>
+                </webobject>
               </webobject>
-            </webobject>
-          </ul>
-        </webobject>
+            </ul>
+          </webobject>
           <webobject name = "SecondaryActionBlock" />
         </webobject>
       </webobject>
       <webobject name = "InnerWrapper">
-        <webobject name = "ErrorBlock"/>
+        <webobject name = "ErrorBlock" />
         <webobject name = "InspectPageRepetition" />
-      </webobject><div class="InnerClear"></div>
+      </webobject>
+      <div class = "InnerClear"></div>
       <webobject name = "ShowBottomActionBlock">
         <webobject name = "BottomActionBlock">
-        <webobject name="ShouldShowDefaultPageButtons">
-          <ul class = "ActionList">
-            <webobject name = "IsEditingConditional">
+          <webobject name = "ShouldShowDefaultPageButtons">
+            <ul class = "ActionList">
+              <webobject name = "IsEditingConditional">
                 <li>
-                <webobject name = "CancelButton">
-                <webobject name = "CancelButtonSpan" />                
-                </webobject>
+                  <webobject name = "CancelButton"> <webobject name = "CancelButtonSpan" /> </webobject>
                 </li>
-              <webobject name = "IsObjectSmartDeletable">
-                <li><webobject name = "SmartDeleteButton" /></li>
-              </webobject>
+                <webobject name = "IsObjectSmartDeletable">
+                  <li><webobject name = "SmartDeleteButton" /></li>
+                </webobject>
                 <li><webobject name = "SubmitChanges" /></li>
-            </webobject>
-            <webobject name = "IsNotEditingConditional">
-              <webobject name = "IsObjectSmartFindable">
-                <li><webobject name = "SmartFindButton" /></li>
               </webobject>
-              <webobject name = "IsObjectSmartEditable">
-                <li><webobject name = "SmartEditButton" /></li>
+              <webobject name = "IsNotEditingConditional">
+                <webobject name = "IsObjectSmartFindable">
+                  <li><webobject name = "SmartFindButton" /></li>
+                </webobject>
+                <webobject name = "IsObjectSmartEditable">
+                  <li><webobject name = "SmartEditButton" /></li>
+                </webobject>
+                <webobject name = "IsObjectSmartCreatable">
+                  <li><webobject name = "SmartCreateButton" /></li>
+                </webobject>
               </webobject>
-              <webobject name = "IsObjectSmartCreatable">
-                <li><webobject name = "SmartCreateButton" /></li>
-              </webobject>
-
-            </webobject>
-          </ul>
-         </webobject>
+            </ul>
+          </webobject>
           <webobject name = "SecondaryActionBlock" />
         </webobject>
       </webobject>
-      </webobject>
     </webobject>
+  </webobject>
 </webobject>
