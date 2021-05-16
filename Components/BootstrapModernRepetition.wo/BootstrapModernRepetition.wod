@@ -1,3 +1,28 @@
+IsObjectSmartFindable: WOConditional {
+	condition = d2wContext.isEntitySmartFindable;
+}
+
+SmartFindButton: CCSmartAjaxButton {
+	action = smartFindAction;
+	alt = "Search for object";
+	value = d2wContext.findButtonLabel;
+	class = d2wContext.baseClassForFindButton;
+	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
+    updateContainerID = d2wContext.idForParentMainContainer;
+}
+IsObjectSmartCreatable: WOConditional {
+	condition = d2wContext.isEntitySmartCreatable;
+}
+
+SmartCreateButton: CCSmartAjaxButton {
+	action = smartCreateAction;
+	alt = "Create new object";
+	value = d2wContext.createButtonLabel;
+	class = d2wContext.baseClassForCreateButton;
+	useAjax = d2wContext.useAjaxControlsWhenEmbedded;
+    updateContainerID = d2wContext.idForParentMainContainer;
+}
+
 AttributeDisplay: WOSwitchComponent { 
 	WOComponentName = d2wContext.componentName;
 	_componentUnroll = true;
