@@ -63,6 +63,7 @@
     40 : *true* => isEntitySmartEditable = true [com.webobjects.directtoweb.BooleanAssignment],
     40 : *true* => isEntitySmartCreatable = true [com.webobjects.directtoweb.BooleanAssignment],
     40 : *true* => isEntitySmartFindable = false [com.webobjects.directtoweb.BooleanAssignment],
+    40 : look = 'ERModernLook' => templateNameForListPage = BMLListPage [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => templateNameForQueryPage = BMLQueryPage [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => templateNameForListPage = BMLTabInspectPage [com.webobjects.directtoweb.Assignment],
     40 : look = 'ERModernLook' => emptyListComponentName = BMLEmptyListMessage [com.webobjects.directtoweb.Assignment],
