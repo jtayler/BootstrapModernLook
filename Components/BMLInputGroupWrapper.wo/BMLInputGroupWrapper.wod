@@ -17,6 +17,7 @@ HasPost : WOConditional {
 Span: WOGenericContainer {
 	elementName = "span";
 	class = d2wContext.baseClassForInputSpan;
+	id = spanID;
 }
 
 InputGroupDiv : WOGenericContainer {
