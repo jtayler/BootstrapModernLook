@@ -4,7 +4,6 @@ InputGroupWrapper: BMLInputGroupWrapper {
 TextField1: WOTextField {
 	elementName = "input";
 	class = d2wContext.baseClassForFormInput;
-	name = name; //VALID
 	id = "datepicker";
 	value = value;
 	style = "visible;";
