@@ -5,8 +5,8 @@ TextField1: WOTextField {
 	elementName = "input";
 	class = d2wContext.baseClassForFormInput;
 	id = "datepicker";
+	placeholder = d2wContext.propertyTitle;
 	value = value;
-	style = "visible;";
 	type = "text";
 	dateformat = formatter;
 }
